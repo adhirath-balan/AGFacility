@@ -1,0 +1,146 @@
+.first_page {
+    height: 60vh;
+    margin-top: 30vh;
+    margin-left: 10vw;
+}
+
+.navbar-bg{
+    background-color: #191a1da8;
+}
+
+.boxShadow {
+    box-shadow: 10px 10px 10px #00000091;
+}
+
+.fp_divone {
+    position: relative;
+    top: 7rem;
+}
+
+.fp_divtwo {
+    margin-top: 10rem;
+}
+
+
+.contact-us{
+    position: fixed;
+    right: 2em;
+    bottom: -3em;
+}
+
+.contact-us-hidden-one{
+    position: fixed;
+    right: 2em;
+    bottom: 1.2em;
+}
+
+.contact-us-hidden-two{
+    position: fixed;
+    right: 2em;
+    bottom: 5.4em;
+}
+
+.second_page {
+    position: relative;
+    opacity: 0;
+}
+
+.scrolled-down {
+    transform: translateY(-200%);
+    transition: all 0.3s ease-in-out;
+}
+
+.scrolled-up {
+    transform: translateY(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.service_one{
+    background-image: url("../img/cleaning.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top: 10rem;
+    height: 100vh;
+}
+
+.cleaning {
+    background-color: #ffffffa8;
+}
+
+.btn-learn {
+    background-color: #153E5Ca8;
+}
+
+.tp_divone{
+    padding: 3rem;
+    margin-top:10rem;
+}
+
+.tp_innerdiv{
+    background-color:#153E5Ca8;
+    margin: 3rem 0.01rem 7rem 1rem;
+}
+
+.service-margin{
+    margin-top: 10em;
+}
+
+.hover_left{
+    z-index: 2;
+}
+
+.hover_center{
+    z-index: 4;
+}
+
+.hover_right{
+    z-index: 6;
+}
+
+.service_two{
+    background-image: url("../img/technical.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh
+}
+
+.features{
+    margin-top: 2rem;
+}
+
+.feature-content{
+    padding: 1.5em;
+}
+
+.service_three{
+    background-image: url("../img/other_services.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+.icon{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.res-img{
+    background-image: url("../img/Residential-cleaning.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+#ourServices_one{
+    position: relative;
+}
+
+.res-hover{
+    position: absolute;
+    top: 0rem;
+    z-index: -1;
+}
