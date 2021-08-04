@@ -55,10 +55,96 @@ function hideFunction(){
     document.getElementById("hidden-content").className = "d-none"
 }
 
+// Commercial Hover
+
+function commercialIn(){
+    document.getElementsByClassName("res-hover")[0].style.zIndex = "1"
+    document.getElementsByClassName("hover_center")[0].style.zIndex = "0"
+}
+
+function commercialOut(){
+    document.getElementsByClassName("res-hover")[0].style.zIndex = "-1"
+    document.getElementsByClassName("hover_center")[0].style.zIndex = "4"
+}
+
+// Home Hover
+
 function homeIn(){
-    document.getElementsByClassName("res-hover")[0].style.zIndex = "3"
+    document.getElementsByClassName("res-hover")[1].style.zIndex = "3"
 }
 
 function homeOut(){
-    document.getElementsByClassName("res-hover")[0].style.zIndex = "-1"
+    document.getElementsByClassName("res-hover")[1].style.zIndex = "-1"
+}
+
+// Plumbing Hover
+
+function plumbingIn(){
+    document.getElementsByClassName("res-hover")[2].style.zIndex = "1"
+    document.getElementsByClassName("hover_center")[1].style.zIndex = "0"
+    document.getElementsByClassName("hover_right")[0].style.zIndex = "0"
+}
+
+function plumbingOut(){
+    document.getElementsByClassName("res-hover")[2].style.zIndex = "-1"
+    document.getElementsByClassName("hover_center")[1].style.zIndex = "4"
+    document.getElementsByClassName("hover_right")[0].style.zIndex = "6"
+}
+
+// Electrical Hover
+
+function electricalIn(){
+    document.getElementsByClassName("res-hover")[3].style.zIndex = "3"
+    document.getElementsByClassName("hover_right")[0].style.zIndex = "0"
+}
+
+function electricalOut(){
+    document.getElementsByClassName("res-hover")[3].style.zIndex = "-1"
+    document.getElementsByClassName("hover_right")[0].style.zIndex = "6"
+}
+
+// Sewage Hover
+
+function sewageIn(){
+    document.getElementsByClassName("res-hover")[4].style.zIndex = "5"
+}
+
+function sewageOut(){
+    document.getElementsByClassName("res-hover")[4].style.zIndex = "-1"
+}
+
+// Security Hover
+
+function securityIn(){
+    document.getElementsByClassName("res-hover")[5].style.zIndex = "1"
+    document.getElementsByClassName("hover_center")[2].style.zIndex = "0"
+    document.getElementsByClassName("hover_right")[1].style.zIndex = "0"
+}
+
+function securityOut(){
+    document.getElementsByClassName("res-hover")[5].style.zIndex = "-1"
+    document.getElementsByClassName("hover_center")[2].style.zIndex = "4"
+    document.getElementsByClassName("hover_right")[1].style.zIndex = "6"
+}
+
+// Painting Hover
+
+function paintingIn(){
+    document.getElementsByClassName("res-hover")[6].style.zIndex = "3"
+    document.getElementsByClassName("hover_right")[1].style.zIndex = "0"
+}
+
+function paintingOut(){
+    document.getElementsByClassName("res-hover")[6].style.zIndex = "-1"
+    document.getElementsByClassName("hover_right")[1].style.zIndex = "6"
+}
+
+// Furniture Hover
+
+function furnitureIn(){
+    document.getElementsByClassName("res-hover")[7].style.zIndex = "5"
+}
+
+function furnitureOut(){
+    document.getElementsByClassName("res-hover")[7].style.zIndex = "-1"
 }

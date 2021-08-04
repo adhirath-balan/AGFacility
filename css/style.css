@@ -26,18 +26,21 @@
     position: fixed;
     right: 2em;
     bottom: -3em;
+    z-index: 2;
 }
 
 .contact-us-hidden-one{
     position: fixed;
     right: 2em;
     bottom: 1.2em;
+    z-index: 1;
 }
 
 .contact-us-hidden-two{
     position: fixed;
     right: 2em;
     bottom: 5.4em;
+    z-index: 1;
 }
 
 .second_page {
@@ -55,13 +58,16 @@
     transition: all 0.3s ease-in-out;
 }
 
-.service_one{
-    background-image: url("../img/cleaning.jpg");
+.img-other{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    margin-top: 10rem;
     height: 100vh;
+}
+
+.service_one{
+    background-image: url("../img/cleaning.jpg");
+    margin-top: 10rem;
 }
 
 .cleaning {
@@ -74,7 +80,7 @@
 
 .tp_divone{
     padding: 3rem;
-    margin-top:10rem;
+    /* margin-top:10rem; */
 }
 
 .tp_innerdiv{
@@ -100,10 +106,6 @@
 
 .service_two{
     background-image: url("../img/technical.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 100vh
 }
 
 .features{
@@ -116,10 +118,6 @@
 
 .service_three{
     background-image: url("../img/other_services.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 100vh;
 }
 
 .icon{
@@ -129,13 +127,10 @@
 
 .res-img{
     background-image: url("../img/Residential-cleaning.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 100vh;
+    width: 99.1vw;
 }
 
-#ourServices_one{
+.ourServices{
     position: relative;
 }
 
@@ -143,4 +138,56 @@
     position: absolute;
     top: 0rem;
     z-index: -1;
+}
+
+.commercial-img{
+    background-image: url("../img/commercial.jpg");
+    width: 99.1vw;
+}
+
+.plumbing-img{
+    background-image: url("../img/plumbing.jpg");
+    width: 99.1vw;
+}
+
+.electrical-img{
+    background-image: url("../img/electrical.jpg");
+    width: 99.1vw;
+}
+
+.sewage-img{
+    background-image: url("../img/sewage.jpg");
+    width: 99.1vw;
+}
+
+.security-img{
+    background-image: url("../img/security.jpg");
+    width: 99.1vw;
+}
+
+.painting-img{
+    background-image: url("../img/painting.jpg");
+    width: 99.1vw;
+}
+
+.furniture-img{
+    background-image: url("../img/furniture.jpg");
+    width: 99.1vw;
+}
+
+.grp-img{
+    background-image: url("../img/group-pic.JPG");
+    width: 100%;
+    position: relative;
+}
+
+.grp-logo{
+    position: absolute;
+    left: 35%;
+    top: 25%;
+    opacity: 0.2;
+}
+
+.grp-logo:hover{
+    opacity: 1;
 }

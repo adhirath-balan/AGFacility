@@ -14,20 +14,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Facicon Generator -->
-    <link rel="icon" href="img/favicon.png" type="image/png">
+    <!-- Favicon Generator -->
+    <link rel="icon" href="img/logo.png" type="image/png">
     <title>AG Facility Management Services</title>
 </head>
 
 <body data-spy="scroll" data-target="#mainNavbar">
 
     <header>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-bg autohide" id="mainNavbar">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-bg autohide p-0" id="mainNavbar">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <div class="row align-items-center">
                         <div class="col-2 ">
-                            <img src="img/favicon.png" alt="Logo" class="d-inline-block align-text-top" height="70"
+                            <img src="img/logo.png" alt="Logo" class="d-inline-block align-text-top" height="70"
                                 width="70">
                         </div>
                     </div>
@@ -44,13 +44,13 @@
                             <a class="nav-link text-white" href="index.html">HOME</a>
                         </li>
                         <li class="nav-item px-4 text-right">
+                            <a class="nav-link text-white" href="one.html">OUR SERVICES</a>
+                        </li>
+                        <li class="nav-item px-4 text-right">
                             <a class="nav-link text-white" href="#aboutUs">ABOUT US</a>
                         </li>
                         <li class="nav-item px-4 text-right">
-                            <a class="nav-link text-white" href="#ourServices_one">OUR SERVICES</a>
-                        </li>
-                        <li class="nav-item px-4 text-right">
-                            <a class="nav-link text-white" href="#contact">CONTACT</a>
+                            <a class="nav-link text-white" href="#contact">GALLERY</a>
                         </li>
                     </ul>
                 </div>
@@ -59,7 +59,7 @@
     </header>
 
     <section class="mt-5">
-        <div class="first_page" id="aboutUs">
+        <div class="first_page">
             <div class="card col-4 boxShadow fp_divone px-0">
                 <div class="card-body">
                     <h3>AG</h3>
@@ -94,25 +94,24 @@
             </div>
         </div>
     </section>
+
     <section class="contact-main">
-        <div class="contact-us" style="z-index: 16;" onmouseenter="contactFunction()" onmouseleave="hideFunction()">
+        <div class="contact-us" onmouseenter="contactFunction()" onmouseleave="hideFunction()">
             <i class="fas fa-id-card-alt text-light bg-dark icon rounded-circle p-3 fa-2x"></i>
         </div>
         <div class="d-none" id="hidden-content">
-            <div class="contact-us-hidden-one" style="z-index: 15;">
+            <div class="contact-us-hidden-one">
                 <i class="fas fa-id-card-alt text-light bg-dark icon rounded-circle p-3 fa-2x"></i>
             </div>
-            <div class="contact-us-hidden-two" style="z-index: 15;">
+            <div class="contact-us-hidden-two">
                 <i class="fas fa-id-card-alt text-light bg-dark icon rounded-circle p-3 fa-2x"></i>
             </div>
         </div>
     </section>
 
-
-
-    <section id="ourServices_one">
-        <div class="service_one">
-            <div class="row mr-0">
+    <section class="ourServices">
+        <div class="img-other service_one">
+            <div class="row mr-0 align-items-center">
                 <div class="col-5 tp_divone">
                     <div class="card cleaning p-5">
                         <div class="">
@@ -135,21 +134,20 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-7 service-margin">
-                    <div class="row ml-5">
-                        <div class="col-4 tp_innerdiv text-white hover_left">
-                            <h5 class="features text-center">COMMERCIAL CLEANING</h5>
-                            <p class="feature-content text-justify">We as a company are doing the commercial cleaning
+                <div class="col-7">
+                    <div class="row ml-5 text-center">
+                        <div class="col-5 tp_innerdiv text-white hover_left" onmouseenter="commercialIn()" onmouseleave="commercialOut()">
+                            <h5 class="features">COMMERCIAL CLEANING</h5>
+                            <p class="feature-content">We as a company are doing the commercial cleaning
                                 businesses with professional housekeepers and janitors. We offer wide range of
                                 stupendous commercial cleaning services like office cleaning service, janitorial
                                 cleaning service, industrial cleaning service, building cleaning service. We have
                                 commercial cleaning business in schools, colleges, offices, Shopping Malls, Hotels and
                                 restaurants.</p>
                         </div>
-                        <div class="col-4 tp_innerdiv text-white hover_center" onmouseenter="homeIn()"
-                            onmouseleave="homeOut()">
-                            <h5 class="features text-center">HOME CLEANING</h5>
-                            <p class="feature-content text-justify">We as a residential cleaning company are pioneers in
+                        <div class="col-5 tp_innerdiv text-white hover_center" onmouseenter="homeIn()" onmouseleave="homeOut()">
+                            <h5 class="features">HOME CLEANING</h5>
+                            <p class="feature-content">We as a residential cleaning company are pioneers in
                                 residential cleaning business for a long period. The residential house cleaning services
                                 includes the cleaning of the all the rooms of the house starting from veranda, living
                                 room, Bedrooms, Kitchens to Bathroom and Toilet inclusive of the furniture, windows and
@@ -161,35 +159,29 @@
             </div>
         </div>
         <div class="res-hover">
-            <div class="res-img">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat adipisci quis praesentium. Optio
-                adipisci aperiam vitae veniam laboriosam culpa, obcaecati vel neque nisi? Odit magnam eveniet
-                consequuntur eligendi obcaecati. Deserunt vitae modi amet sed doloribus, doloremque voluptatibus
-                repellendus numquam. Velit praesentium ullam aspernatur eligendi porro rerum repellat quos dicta
-                nostrum. Optio, repudiandae accusamus saepe incidunt, molestiae laudantium repellat fugiat impedit et ut
-                voluptatem delectus! Doloribus distinctio dicta maxime esse animi odit suscipit, officiis quasi
-                temporibus eius, recusandae sed natus nesciunt cumque corrupti! Tenetur voluptas sequi laborum? Unde
-                quae aliquam fugiat omnis delectus officiis illo, sequi, eaque adipisci sint, possimus reiciendis?
-
+            <div class="commercial-img img-other"></div>
+        </div>
+        <div class="res-hover">
+            <div class="res-img img-other">
             </div>
         </div>
     </section>
 
-    <section id="ourServices_two">
-        <div class="service_two">
-            <div class="row mr-0">
+    <section class="ourServices">
+        <div class="img-other service_two">
+            <div class="row mr-0 align-items-center">
                 <div class="col-7 text-white">
-                    <div class="row justify-content-center">
-                        <div class="col-3 tp_innerdiv hover_left">
-                            <h5 class="features text-center">PLUMBING SERVICE AND REPAIRS</h5>
-                            <p class="feature-content text-justify">We offer affordable and professional plumbing
+                    <div class="row justify-content-center text-center">
+                        <div class="col-3 tp_innerdiv hover_left" onmouseenter="plumbingIn()" onmouseleave="plumbingOut()">
+                            <h5 class="features">PLUMBING SERVICE AND REPAIRS</h5>
+                            <p class="feature-content">We offer affordable and professional plumbing
                                 services to a wide range of customer. We provide emergency plumbing services 24 hour by
                                 seven, commercial plumbing services, residential plumbing services, plumbing repair
                                 service and plumbing maintenance service.</p>
                         </div>
-                        <div class="col-3 tp_innerdiv hover_center">
-                            <h5 class="features text-center">ELECTRICAL MAINTENANCE SERVICE</h5>
-                            <p class="feature-content text-justify">We are electrical service contractors and electrical
+                        <div class="col-3 tp_innerdiv hover_center" onmouseenter="electricalIn()" onmouseleave="electricalOut()">
+                            <h5 class="features">ELECTRICAL MAINTENANCE SERVICE</h5>
+                            <p class="feature-content">We are electrical service contractors and electrical
                                 maintenance contractors to many residential and industries. We offer wide range of
                                 electrical maintenance services like basic electrical maintenance, home electrical
                                 maintenance and industrial electrical maintenance and domestic electrical services like
@@ -197,9 +189,9 @@
                                 services and electrical installation services. The services include repairs of
                                 electrical appliances like washing machine, TV, fridge mixer and grinders.</p>
                         </div>
-                        <div class="col-3 tp_innerdiv hover_right">
-                            <h5 class="features text-center">SEWAGE TREATMENT PLANT SERVICE</h5>
-                            <p class="feature-content text-justify">We as Facility Management Company provides sewage
+                        <div class="col-3 tp_innerdiv hover_right" onmouseenter="sewageIn()" onmouseleave="sewageOut()">
+                            <h5 class="features">SEWAGE TREATMENT PLANT SERVICE</h5>
+                            <p class="feature-content">We as Facility Management Company provides sewage
                                 treatment plant installation, sewage treatment plant maintenance, sewage treatment plant
                                 service, sewage treatment plant construction at reasonable and affordable cost.</p>
                         </div>
@@ -224,11 +216,20 @@
                 </div>
             </div>
         </div>
+        <div class="res-hover">
+            <div class="plumbing-img img-other"></div>
+        </div>
+        <div class="res-hover">
+            <div class="electrical-img img-other"></div>
+        </div>
+        <div class="res-hover">
+            <div class="sewage-img img-other"></div>
+        </div>
     </section>
 
-    <section id="ourServices_three">
-        <div class="service_three">
-            <div class="row mr-0">
+    <section class="ourServices">
+        <div class="img-other service_three">
+            <div class="row mr-0 align-items-center">
                 <div class="col-5 tp_divone">
                     <div class="card cleaning p-5">
                         <div class="">
@@ -245,25 +246,25 @@
                     </div>
                 </div>
                 <div class="col-7 text-white">
-                    <div class="row justify-content-center">
-                        <div class="col-3 tp_innerdiv hover_left">
-                            <h5 class="features text-center">PEST CONTROL SERVICES</h5>
-                            <p class="feature-content text-justify">We are one of the top pest control services offering
+                    <div class="row justify-content-center text-center">
+                        <div class="col-3 tp_innerdiv hover_left" onmouseenter="securityIn()" onmouseleave="securityOut()">
+                            <h5 class="features">PEST CONTROL SERVICES</h5>
+                            <p class="feature-content">We are one of the top pest control services offering
                                 company in Chennai. We provide professional pest control services like residential pest
                                 control services and commercial pest control services at the context of customer
                                 flexibility following all the safety procedures to ensure safe well-being of our beloved
                                 customer.</p>
                         </div>
-                        <div class="col-3 tp_innerdiv hover_center">
-                            <h5 class="features text-center">HOUSE PAINTING SERVICES</h5>
-                            <p class="feature-content text-justify">We are the best painting services offering in
+                        <div class="col-3 tp_innerdiv hover_center" onmouseenter="paintingIn()" onmouseleave="paintingOut()">
+                            <h5 class="features">HOUSE PAINTING SERVICES</h5>
+                            <p class="feature-content">We are the best painting services offering in
                                 Chennai. We offer professional painting services like residential painting services,
                                 interior house painting services, exterior painting services, indoor painting services,
                                 industrial painting services and painting services to commercial complexes.</p>
                         </div>
-                        <div class="col-3 tp_innerdiv hover_right">
-                            <h5 class="features text-center">WOOD FURNITURE REPAIR SERVICES</h5>
-                            <p class="feature-content text-justify">We provide creative carpentry services like
+                        <div class="col-3 tp_innerdiv hover_right" onmouseenter="furnitureIn()" onmouseleave="furnitureOut()">
+                            <h5 class="features">WOOD FURNITURE REPAIR SERVICES</h5>
+                            <p class="feature-content">We provide creative carpentry services like
                                 carpentry repair services, finish carpentry services, carpentry maintenance service,
                                 carpenter handyman service, home furniture repair services and furniture repair and
                                 refurnishing at an affordable cost and at customer’s flexibility.</p>
@@ -272,14 +273,23 @@
                 </div>
             </div>
         </div>
+        <div class="res-hover">
+            <div class="security-img img-other"></div>
+        </div>
+        <div class="res-hover">
+            <div class="painting-img img-other"></div>
+        </div>
+        <div class="res-hover">
+            <div class="furniture-img img-other"></div>
+        </div>
     </section>
 
 
     <!-- <div class="embed-responsive embed-responsive-1by1 mt-5">
             <iframe src="https://www.youtube.com/embed/e_0Q92a8Wlo" title="YouTube video player" autoplay allowfullscreen></iframe>
-        </div> -->
+    </div> -->
 
-    <section>
+    <section id="aboutUs">
         <div class="container text-center my-4">
             <h3 class="py-3">Big Title</h3>
             <p class="py-2">Lorem ipsum dolor sit.</p>
@@ -317,13 +327,14 @@
         </div>
     </section>
 
-    <div class="container rounded-circle bg-warning p-5 my-5">
-        <h2>Lorem ipsum dolor sit.</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime laboriosam omnis totam sapiente distinctio
-            consequatur, culpa doloribus aspernatur tempora iusto libero neque recusandae ullam qui architecto? Unde,
-            eos! Cum ab expedita veritatis porro consequatur architecto, ex maxime libero sapiente laborum quam sed
-            reprehenderit explicabo magni molestias praesentium non tempora ut?</p>
-    </div>
+    <section>
+        <div class="grp-img img-other">
+            <div>
+                <img src="img/logo.png" alt="logo" class="grp-logo">
+            </div>
+        </div>
+        
+    </section>
 
 
     <footer id="contact">
