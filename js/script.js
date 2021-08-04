@@ -148,3 +148,15 @@ function furnitureIn(){
 function furnitureOut(){
     document.getElementsByClassName("res-hover")[7].style.zIndex = "-1"
 }
+
+// Grp Text Hover 
+
+function grpTextIn() {
+    document.getElementsByClassName("grp-text")[0].style.opacity = "1"
+    document.getElementsByClassName("grp-text")[0].style.zIndex = "7"
+}
+
+function grpTextOut() {
+    document.getElementsByClassName("grp-text")[0].style.opacity = "0"
+    document.getElementsByClassName("grp-text")[0].style.zIndex = "0"
+}
