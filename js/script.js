@@ -219,3 +219,19 @@ function galFunc(img){
         }
     }
 }
+
+function openGallery(){
+    var gallery = document.getElementById("gallery");
+    gallery.classList.remove("d-none");
+    gallery.style.zIndex="3";
+}
+
+// window.addEventListener(onclick,function(event){
+//     var gallery = document.getElementById("gallery");
+//     if (!gallery.contains(event.target) && !gallery(event.target.parentNode)){
+//         // if(!(gallery.classList.contains("d-none"))){
+//             gallery.classList.add("d-none");
+//             gallery.style.zIndex="-1";
+//         // }
+//     }
+// });

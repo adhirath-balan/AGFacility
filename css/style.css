@@ -270,7 +270,7 @@ a:hover{
 .gal-div{
     overflow-x: hidden;
     overflow-y: scroll;
-    height: 825px;
+    height: 585px;
 }
 
 .gal-img-right{
@@ -288,4 +288,12 @@ a:hover{
 
 .content{
     line-height: 185%;
+}
+
+#gallery{
+    position: absolute;
+    top: 12%;
+    width: 1200px;
+    height: 585px;
+    left: 9%;
 }
