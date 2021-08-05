@@ -103,6 +103,12 @@ a:hover{
 .tp_innerdiv{
     background-color:#153E5Ca8;
     margin: 3rem 0.01rem 7rem 1rem;
+    transition: flex 0.1s linear;
+}
+
+.tp_innerdiv:hover{
+    flex: 0 0 44%;
+    max-width: 44%;
 }
 
 .service-margin{
