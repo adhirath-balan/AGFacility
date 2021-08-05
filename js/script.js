@@ -203,3 +203,12 @@ function grpTextOut() {
     document.getElementsByClassName("grp-logo")[0].style.opacity = "0.2"
     document.getElementsByClassName("grp-text")[0].style.zIndex = "0"
 }
+
+// Gallery Function
+
+function galFunc(img){
+    var carImg = document.getElementsByClassName("carousel-item active")[0].children[0];
+    carImg.src = img.src;
+    carImg.alt = img.alt;
+    carImg.classList.add(img.className);
+}

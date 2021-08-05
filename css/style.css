@@ -29,21 +29,28 @@ a:hover{
 .contact-us{
     position: fixed;
     right: 2em;
-    bottom: -3em;
+    bottom: 1em;
     z-index: 2;
 }
 
 .contact-us-hidden-one{
     position: fixed;
     right: 2em;
-    bottom: 1.2em;
+    bottom: 6em;
     z-index: 1;
 }
 
 .contact-us-hidden-two{
     position: fixed;
     right: 2em;
-    bottom: 5.4em;
+    bottom: 11em;
+    z-index: 1;
+}
+
+.contact-us-hidden-three{
+    position: fixed;
+    right: 2em;
+    bottom: 16em;
     z-index: 1;
 }
 
@@ -141,7 +148,7 @@ a:hover{
 
 .res-img{
     background-image: url("../img/Residential-cleaning.jpg");
-    width: 99.1vw;
+    width: 100vw;
 }
 
 .ourServices{
@@ -151,42 +158,43 @@ a:hover{
 .res-hover{
     position: absolute;
     top: 0rem;
+    right: 0rem;
     z-index: -1;
 }
 
 .commercial-img{
     background-image: url("../img/commercial.jpg");
-    width: 99.1vw;
+    width: 100vw;
 }
 
 .plumbing-img{
     background-image: url("../img/plumbing.jpg");
-    width: 99.1vw;
+    width: 100vw;
 }
 
 .electrical-img{
     background-image: url("../img/electrical.jpg");
-    width: 99.1vw;
+    width: 100vw;
 }
 
 .sewage-img{
     background-image: url("../img/sewage.jpg");
-    width: 99.1vw;
+    width: 100vw;
 }
 
 .security-img{
     background-image: url("../img/security.jpg");
-    width: 99.1vw;
+    width: 100vw;
 }
 
 .painting-img{
     background-image: url("../img/painting.jpg");
-    width: 99.1vw;
+    width: 100vw;
 }
 
 .furniture-img{
     background-image: url("../img/furniture.jpg");
-    width: 99.1vw;
+    width: 100vw;
 }
 
 .grp-img{
@@ -246,6 +254,11 @@ a:hover{
 .gal-div{
     overflow-x: hidden;
     overflow-y: scroll;
+}
+
+.gal-img-right{
+    width: 100%;
+    height: 100%;
 }
 
 /* Styles for one.html */
