@@ -189,3 +189,15 @@ function furnitureOut(){
     document.getElementsByClassName("dots")[7].classList.remove("d-none")
     document.getElementsByClassName("expand")[7].classList.add("d-none")
 }
+
+// Grp Text Hover 
+
+function grpTextIn() {
+    document.getElementsByClassName("grp-text")[0].style.opacity = "1"
+    document.getElementsByClassName("grp-text")[0].style.zIndex = "7"
+}
+
+function grpTextOut() {
+    document.getElementsByClassName("grp-text")[0].style.opacity = "0"
+    document.getElementsByClassName("grp-text")[0].style.zIndex = "0"
+}

@@ -4,6 +4,10 @@
     margin-left: 10vw;
 }
 
+a:hover{
+    text-decoration: none;
+}
+
 .navbar-bg{
     background-color: #191a1da8;
 }
@@ -190,8 +194,56 @@ a:hover{
     left: 35%;
     top: 25%;
     opacity: 0.2;
+    background-image: url("../img/logo.png");
+    background-repeat: no-repeat;
+    background-size: initial;
+    height: 51%;
+    width: 26%;
+}
+
+.grp-text{
+    position: absolute;
+    top: 30%;
+    padding: 6%;
+    opacity: 0;
+    z-index: 0;
+    width: 30%;
+    left: 33%;
+    font-size: 20px;
 }
 
 .grp-logo:hover{
+    opacity: 0.6;
+}
+
+.grp-text:hover{
     opacity: 1;
+}
+
+.overlay{
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+}
+
+/* Carousel Style */
+
+.carousel-btn{
+    height: fit-content;
+    top: 50%;
+    background: none;
+    border: none;
+}
+
+.gal-div{
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+/* Styles for one.html */
+
+.content{
+    line-height: 185%;
 }
