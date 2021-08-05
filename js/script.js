@@ -194,10 +194,12 @@ function furnitureOut(){
 
 function grpTextIn() {
     document.getElementsByClassName("grp-text")[0].style.opacity = "1"
+    document.getElementsByClassName("grp-logo")[0].style.opacity = "1"
     document.getElementsByClassName("grp-text")[0].style.zIndex = "7"
 }
 
 function grpTextOut() {
     document.getElementsByClassName("grp-text")[0].style.opacity = "0"
+    document.getElementsByClassName("grp-logo")[0].style.opacity = "0.2"
     document.getElementsByClassName("grp-text")[0].style.zIndex = "0"
 }
