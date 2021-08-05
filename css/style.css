@@ -260,6 +260,7 @@ a:hover{
 .gal-div{
     overflow-x: hidden;
     overflow-y: scroll;
+    height: 825px;
 }
 
 .gal-img-right{
@@ -268,6 +269,12 @@ a:hover{
 }
 
 /* Styles for one.html */
+
+.oneHtml{
+    background-image: url("/img/simplified-logo-bg.png");
+    background-size: 50%;
+    background-position-x: center;
+}
 
 .content{
     line-height: 185%;
