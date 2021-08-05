@@ -207,8 +207,15 @@ function grpTextOut() {
 // Gallery Function
 
 function galFunc(img){
-    var carImg = document.getElementsByClassName("carousel-item active")[0].children[0];
-    carImg.src = img.src;
-    carImg.alt = img.alt;
-    carImg.classList.add(img.className);
+
+    document.getElementsByClassName("carousel-item active")[0].classList.remove("active");
+
+    var carouselElements = document.getElementsByClassName("carousel-item");
+
+    for(let i=0; i<carouselElements.length; i++) {
+        if( (carouselElements[i].children[0].src == img.src) ){
+            carouselElements[i].classList.add("active");
+            break;
+        }
+    }
 }
