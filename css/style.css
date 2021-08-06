@@ -207,6 +207,25 @@ a:hover{
     width: 100vw;
 }
 
+#aboutUs{
+    font-size: larger;
+    height: 75vh;
+    overflow-y: scroll;
+    background-image: url("../img/simplified-logo-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+#aboutUs::-webkit-scrollbar{
+    display: none;
+}
+
+#aboutUs .card{
+    background-color: #ffffffbf;
+}
+
 .grp-img{
     background-image: url("../img/group-pic.JPG");
     width: 100%;
@@ -234,10 +253,6 @@ a:hover{
     left: 35%;
     font-size: 23px;
 }
-
-/* .grp-logo:hover{
-     opacity: 0.7;
-} */
 
 .grp-text:hover{
     opacity: 1;
