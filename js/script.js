@@ -223,7 +223,7 @@ function galFunc(img){
 function openGallery(){
     var gallery = document.getElementById("gallery");
     gallery.classList.remove("d-none");
-    gallery.style.zIndex="3";
+    gallery.style.zIndex="9";
     document.getElementById("gal-overlay").classList.remove("d-none");
 }
 
