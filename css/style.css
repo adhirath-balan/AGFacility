@@ -285,7 +285,7 @@ a:hover{
 .gal-div{
     overflow-x: hidden;
     overflow-y: scroll;
-    height: 585px;
+    height: 520px;
 }
 
 .gal-img-right{
@@ -306,9 +306,19 @@ a:hover{
 }
 
 #gallery{
-    position: absolute;
+    position: fixed;
     top: 12%;
     width: 1200px;
-    height: 585px;
+    height: 520px;
     left: 9%;
+    overflow-y: hidden;
+}
+
+#gal-overlay{
+    background-color: rgba(0, 0, 0, 0.603);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vh;
 }

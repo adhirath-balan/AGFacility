@@ -224,6 +224,7 @@ function openGallery(){
     var gallery = document.getElementById("gallery");
     gallery.classList.remove("d-none");
     gallery.style.zIndex="3";
+    document.getElementById("gal-overlay").classList.remove("d-none");
 }
 
 // window.addEventListener(onclick,function(event){
