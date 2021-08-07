@@ -303,18 +303,6 @@ a:hover{
     height: 100%;
 }
 
-/* Styles for one.html */
-
-.oneHtml{
-    background-image: url("/img/simplified-logo-bg.png");
-    background-size: 50%;
-    background-position-x: center;
-}
-
-.content{
-    line-height: 185%;
-}
-
 #gallery{
     position: absolute;
     width: 1200px;
@@ -340,8 +328,40 @@ a:hover{
 }
 
 .gal-section .container{
-    background-color: #ffffffbd;
     position: absolute;
     top: 15%;
     left: 12%;
+}
+
+.gal-section .h2{
+    background-color: rgba(255, 255, 255, 0.507);
+    display: inline-block;
+    width: 20vw;
+    border-radius: 10px;
+}
+
+.fa-times{
+    right: 0;
+    position: absolute;
+    top: 0.2em;
+    opacity: 0.75;
+}
+
+/* Video */
+
+video{
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Styles for one.html */
+
+.oneHtml{
+    background-image: url("/img/simplified-logo-bg.png");
+    background-size: 50%;
+    background-position-x: center;
+}
+
+.content{
+    line-height: 185%;
 }
