@@ -163,6 +163,8 @@ a:hover{
 .res-img{
     background-image: url("../img/Residential-cleaning.jpg");
     width: 100vw;
+    height: 100vh;
+
 }
 
 .ourServices{
@@ -179,36 +181,43 @@ a:hover{
 .commercial-img{
     background-image: url("../img/commercial.jpg");
     width: 100vw;
+    height: 100vh;
 }
 
 .plumbing-img{
     background-image: url("../img/plumbing.jpg");
     width: 100vw;
+    height: 100vh;
 }
 
 .electrical-img{
     background-image: url("../img/electrical.jpg");
     width: 100vw;
+    height: 100vh;
 }
 
 .sewage-img{
     background-image: url("../img/sewage.jpg");
     width: 100vw;
+    height: 100vh;
 }
 
 .security-img{
     background-image: url("../img/security.jpg");
     width: 100vw;
+    height: 100vh;
 }
 
 .painting-img{
     background-image: url("../img/painting.jpg");
     width: 100vw;
+    height: 100vh;
 }
 
 .furniture-img{
     background-image: url("../img/furniture.jpg");
     width: 100vw;
+    height: 100vh;
 }
 
 #aboutUs{
@@ -351,7 +360,7 @@ a:hover{
 
 video{
     height: 100vh;
-    width: 100vw;
+    width: 100%;
 }
 
 /* Styles for one.html */
@@ -364,4 +373,10 @@ video{
 
 .content{
     line-height: 185%;
+}
+
+.one-img{
+    height: 84vh;
+    max-width: 40vw;
+    left: 1%;
 }
