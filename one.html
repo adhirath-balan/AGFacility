@@ -17,6 +17,7 @@
 
 <body class="oneHtml img-other">
 
+    <!-- Navbar -->
     <header>
         <nav class="navbar fixed-top navbar-expand-lg navbar-bg autohide p-0" id="mainNavbar">
             <div class="container-fluid">
@@ -54,10 +55,109 @@
         </nav>
     </header>
 
+    <!-- gallery -->
+    <section class="gal-section d-none">
+        <div class="container text-center">
+            <h5 class="h2 text-center p-2">GALLERY</h5>
+            <i class="fas fa-times text-white fa-2x" onclick="closeGallery()"></i>
+        </div>
+        <!-- Gallery Overlay -->
+        <div id="gal-overlay" class="container-fluid"></div>
+        <!-- Gallery -->
+        <div id="gallery">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-8 m-0 pr-1" style="height: 500px;">
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel"
+                            data-bs-interval=false>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/one.JPG" class="d-block gal-img-right" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/two.JPG" class="d-block gal-img-right" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/three.JPG" class="d-block gal-img-right w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/four.JPG" class="d-block gal-img-right" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/five.JPG" class="d-block gal-img-right" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/six.JPG" class="d-block gal-img-right" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/seven.JPG" class="d-block gal-img-right" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/eight.JPG" class="d-block gal-img-right" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/nine.JPG" class="d-block gal-img-right" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/ten.JPG" class="d-block gal-img-right" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev carousel-btn" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next carousel-btn" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-4 p-0 gal-div">
+                        <div class="row">
+                            <div class="col-6 m-0 p-0">
+                                <img src="img/one.JPG" class="gal-img-right" onclick="galFunc(this)">
+                            </div>
+                            <div class="col-6 m-0 p-0">
+                                <img src="img/two.JPG" class="gal-img-right" onclick="galFunc(this)">
+                            </div>
+                            <div class="col-6 m-0 p-0">
+                                <img src="img/three.JPG" class="gal-img-right" onclick="galFunc(this)">
+                            </div>
+                            <div class="col-6 m-0 p-0">
+                                <img src="img/four.JPG" class="gal-img-right" onclick="galFunc(this)">
+                            </div>
+                            <div class="col-6 m-0 p-0">
+                                <img src="img/five.JPG" class="gal-img-right" onclick="galFunc(this)">
+                            </div>
+                            <div class="col-6 m-0 p-0">
+                                <img src="img/six.JPG" class="gal-img-right" onclick="galFunc(this)">
+                            </div>
+                            <div class="col-6 m-0 p-0">
+                                <img src="img/seven.JPG" class="gal-img-right" onclick="galFunc(this)">
+                            </div>
+                            <div class="col-6 m-0 p-0">
+                                <img src="img/eight.JPG" class="gal-img-right" onclick="galFunc(this)">
+                            </div>
+                            <div class="col-6 m-0 p-0">
+                                <img src="img/nine.JPG" class="gal-img-right" onclick="galFunc(this)">
+                            </div>
+                            <div class="col-6 m-0 p-0">
+                                <img src="img/ten.JPG" class="gal-img-right" onclick="galFunc(this)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- residential -->
     <section class="container-fluid mt-5">
-        <div class="row align-items-center " id="one">
-            <div class="col-6 mt-5 one-img">
-                <img src="img-one/residential-cleaning.JPG" alt="Residential Cleaning Image" class="w-100">
+        <div class="row align-items-center ml-auto justify-content-center" id="one">
+            <div class="col-6 mt-5 left-img">
+                <img src="img-one/residential-cleaning.JPG" alt="Residential Cleaning Image" class="h-100">
             </div>
             <div class="col-6 mt-5 text-center">
                 <p class="h1 text-muted text-center">Residential Cleaning</p>
@@ -79,9 +179,9 @@
                 <img src="img-one/comercial-cleaning.JPG" alt="Commercial Commercial Image" class="w-100">
             </div>
         </div>
-        <div class="row align-items-center">
-            <div class="col-6 mt-5">
-                <img src="img-one/residential-cleaning.JPG" alt="Residential Cleaning Image" class="w-100">
+        <div class="row align-items-center ml-auto justify-content-center">
+            <div class="col-6 mt-5 left-img">
+                <img src="img-one/residential-cleaning.JPG" alt="Residential Cleaning Image" class="h-100">
             </div>
             <div class="col-6 mt-5 text-center">
                 <p class="h1 text-muted text-center">Overhead Tank And Sump Cleaning</p>
@@ -92,16 +192,16 @@
         <div class="row align-items-center" id="two">
             <div class="col-6 mt-5 text-center">
                 <p class="h1 text-muted text-center">Plumbing Maintenance</p>
-                <p class="content h6 p-3">Although the pipes and drains connected to your property have immense resilience but yet they are unnoticed. Because of this less importance they are subjected to an extensive damage. We are here to provide our professional qualified plumber to repair and maintain and provide peace of mind to our beloved customers. A plumbing repair and maintenance encompasses addressing wide range of problems like drainage block, failure of water pumps, leaky taps and pipes, slow movement of drain or any plumbing problems we are on it. We can also provide full plumbing and piping works required for new houses.</p>
+                <p class="content h6 p-3">Although the pipes and drains connected to your property have immense resilience but yet they are unnoticed. Because of this less importance they are subjected to an extensive damage. We are here to provide our professional qualified plumber to repair and maintain and provide peace of mind to our beloved customers. A plumbing repair and maintenance encompasses addressing wide range of problems like drainage block, failure of water pumps, leaky taps and pipes, slow movement of drain or any plumbing problems we are on it. We can also provide full plumbing and piping works required for new houses.</p>
                 </p>
             </div>
             <div class="col-6 mt-5">
                 <img src="img-one/comercial-cleaning.JPG" alt="Commercial Commercial Image" class="w-100">
             </div>
         </div>
-        <div class="row align-items-center">
-            <div class="col-6 mt-5">
-                <img src="img-one/electrical-maintenance.jpg" alt="Residential Cleaning Image" class="w-100">
+        <div class="row align-items-center ml-auto justify-content-center">
+            <div class="col-6 mt-5 left-img">
+                <img src="img-one/electrical-maintenance.jpg" alt="Residential Cleaning Image" class="h-100">
             </div>
             <div class="col-6 mt-5 text-center">
                 <p class="h1 text-muted text-center">Electrical Maintenance</p>
@@ -119,13 +219,13 @@
                 <img src="img-one/comercial-cleaning.JPG" alt="Commercial Commercial Image" class="w-100">
             </div>
         </div>
-        <div class="row align-items-center">
-            <div class="col-6 mt-5">
-                <img src="img-one/residential-cleaning.JPG" alt="Residential Cleaning Image" class="w-100">
+        <div class="row align-items-center ml-auto justify-content-center">
+            <div class="col-6 mt-5 left-img">
+                <img src="img-one/residential-cleaning.JPG" alt="Residential Cleaning Image" class="h-100">
             </div>
             <div class="col-6 mt-5 text-center">
                 <p class="h1 text-muted text-center">Air Conditioning Maintenance</p>
-                <p class="p-3 h6 content">You need air conditioning system to keep your home and yourself cool and comfortable, but your air conditioning system also needs regular maintenance to keep itself cool and function effectively. It can also save your money and from headaches due to unexpected system failures that can make you feel hot and sweaty! We are providing maintenance services like cleaning and replacing of HVAC filters, checking for amount of refrigerants, any leakage, working of motors and other electrical circuits, evaporator and condenser coils and repair works like improper cooling, noisy and non-function of fan and compressor, problems in PCB’s and control circuits and any other air conditioning problem we are on it.
+                <p class="p-3 h6 content">You need air conditioning system to keep your home and yourself cool and comfortable, but your air conditioning system also needs regular maintenance to keep itself cool and function effectively. It can also save your money and from headaches due to unexpected system failures that can make you feel hot and sweaty! We are providing maintenance services like cleaning and replacing of HVAC filters, checking for amount of refrigerants, any leakage, working of motors and other electrical circuits, evaporator and condenser coils and repair works like improper cooling, noisy and non-function of fan and compressor, problems in PCB’s and control circuits and any other air conditioning problem we are on it.
                 </p>
             </div>
         </div>
@@ -139,9 +239,9 @@
                 <img src="img-one/comercial-cleaning.JPG" alt="Commercial Commercial Image" class="w-100">
             </div>
         </div>
-        <div class="row align-items-center">
-            <div class="col-6 mt-5">
-                <img src="img-one/residential-cleaning.JPG" alt="Residential Cleaning Image" class="w-100">
+        <div class="row align-items-center ml-auto justify-content-center">
+            <div class="col-6 mt-5 left-img">
+                <img src="img-one/residential-cleaning.JPG" alt="Residential Cleaning Image" class="h-100">
             </div>
             <div class="col-6 mt-5 text-center">
                 <p class="h1 text-muted text-center">Bathroom And Toilet Renovation</p>>
@@ -159,13 +259,13 @@
                 <img src="img-one/comercial-cleaning.JPG" alt="Commercial Commercial Image" class="w-100">
             </div>
         </div>
-        <div class="row align-items-center">
-            <div class="col-6 mt-5">
-                <img src="img-one/residential-cleaning.JPG" alt="Residential Cleaning Image" class="w-100">
+        <div class="row align-items-center ml-auto justify-content-center">
+            <div class="col-6 mt-5 left-img">
+                <img src="img-one/residential-cleaning.JPG" alt="Residential Cleaning Image" class="h-100">
             </div>
             <div class="col-6 mt-5 text-center">
                 <p class="h1 text-muted text-center">Pest Control Services</p>
-                <p class="p-3 h6 content">Have you noticed a pest or insects in the garage or in the kitchen at night? Then we lend our helping hand to provide a solution to your pest problem. Keeping your home pest free is important for many reasons as they prevent your family from health hazards and also prevent your home from being damaged from inside out by these pests. We inspect for pest attacks and address them by removing it with the help of pesticides and other disinfectants with utmost care and safety.
+                <p class="p-3 h6 content">Have you noticed a pest or insects in the garage or in the kitchen at night? Then we lend our helping hand to provide a solution to your pest problem. Keeping your home pest free is important for many reasons as they prevent your family from health hazards and also prevent your home from being damaged from inside out by these pests. We inspect for pest attacks and address them by removing it with the help of pesticides and other disinfectants with utmost care and safety.
                 </p>
             </div>
         </div>
