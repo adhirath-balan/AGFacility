@@ -375,8 +375,15 @@ video{
     line-height: 185%;
 }
 
-.one-img{
-    height: 84vh;
+.left-img{
+    overflow: hidden;
+    height: 85vh;
     max-width: 40vw;
     left: 1%;
+    border-radius: 10px;
+}
+
+.left-img img{
+    position: absolute;
+    left: -240px;
 }
