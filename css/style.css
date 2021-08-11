@@ -399,4 +399,8 @@ video{
     .first_page{
         margin-top: 10vh;
     }
+
+    .second_page{
+        margin-left: 10vw;
+    }
 }
