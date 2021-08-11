@@ -392,3 +392,11 @@ video{
     position: absolute;
     right: -240px;
 }
+
+/* Media Queries */
+
+@media only screen and (max-width: 960px) {
+    .first_page{
+        margin-top: 10vh;
+    }
+}
