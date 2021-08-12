@@ -368,7 +368,7 @@ video{
 .oneHtml{
     background-image: url("/img/simplified-logo-bg.png");
     background-size: 50%;
-    background-position-x: center;
+    background-position: center;
 }
 
 .content{
