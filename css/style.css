@@ -236,7 +236,7 @@ a:hover{
 }
 
 #aboutUs .card{
-    background-color: #ffffffbf;
+    background-color: #ffffffbe;
 }
 
 .member-card{
@@ -370,12 +370,19 @@ video{
     width: 100%;
 }
 
+.member-card{
+    overflow-x: scroll;
+    display: flex;
+    flex-wrap: nowrap;
+    flex: 0 0 35%;
+}
+
 /* Styles for one.html */
 
 .oneHtml{
     background-image: url("/img/simplified-logo-bg.png");
     background-size: 50%;
-    background-position-x: center;
+    background-position: center;
 }
 
 .content{
