@@ -239,6 +239,13 @@ a:hover{
     background-color: #ffffffbf;
 }
 
+.member-card{
+    overflow-x: scroll;
+    display: flex;
+    flex-wrap: nowrap;
+    flex: 0 0 35%;
+}
+
 .grp-img{
     background-image: url("../img/group-pic.JPG");
     width: 100%;
@@ -393,13 +400,6 @@ video{
     right: -240px;
 }
 
-.member-card{
-    overflow-x: scroll;
-    display: flex;
-    flex-wrap: nowrap;
-    flex: 0 0 35%;
-}
-
 /* Media Queries */
 
 @media only screen and (max-width: 960px) {
@@ -413,10 +413,45 @@ video{
 
     .about-us{
         font-size: 10px;
-        width: 90%!important;
+        width: 90vw!important;
     }
 
     .bg-info{
         padding: 0 35vw;
+    }
+
+    .contact-us img{
+        width: 15vw;
+    }
+
+    .contact-us-hidden-one{
+        bottom: 4.1em;
+    }
+
+    .contact-us-hidden-two{
+        bottom: 7.2em;
+    }
+
+    .contact-us-hidden-three{
+        bottom: 10.3em;
+    }
+
+    .oneHtml{
+        background-size: 85%;
+        background-position: center;
+    }
+
+    .col-lg-6.mt-5.left-img{
+        max-width: 90vw;
+        margin-left: -5vw;
+    }
+
+    .col-lg-6.mt-5.text-center{
+        position: absolute;
+        top: 4em;
+        font-size: 10px;
+        padding: 0;
+        background-color: #ffffff8c;
+        height: 87vh;
     }
 }
