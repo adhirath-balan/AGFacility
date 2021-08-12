@@ -236,7 +236,7 @@ a:hover{
 }
 
 #aboutUs .card{
-    background-color: #ffffffbf;
+    background-color: #ffffffbe;
 }
 
 .grp-img{
@@ -363,6 +363,13 @@ video{
     width: 100%;
 }
 
+.member-card{
+    overflow-x: scroll;
+    display: flex;
+    flex-wrap: nowrap;
+    flex: 0 0 35%;
+}
+
 /* Styles for one.html */
 
 .oneHtml{
@@ -393,12 +400,10 @@ video{
     right: -240px;
 }
 
-.member-card{
-    overflow-x: scroll;
-    display: flex;
-    flex-wrap: nowrap;
-    flex: 0 0 35%;
+.bg-overlay{
+    background-color: #ffffffa8;
 }
+
 
 /* Media Queries */
 
