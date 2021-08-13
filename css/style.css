@@ -400,6 +400,7 @@ video {
 .left-img img {
     position: absolute;
     left: -240px;
+    border-radius: 10px;
 }
 
 .right-img {
