@@ -440,14 +440,17 @@ video {
     }
 
     .contact-us-hidden-one {
+        right: 1rem;
         bottom: 4.1em;
     }
 
     .contact-us-hidden-two {
+        right: 1rem;
         bottom: 7.2em;
     }
 
     .contact-us-hidden-three {
+        right: 1rem;
         bottom: 10.3em;
     }
 
@@ -459,15 +462,18 @@ video {
     .row.align-items-center.justify-content-center {
         position: relative;
         max-width: 90vw;
+        left: 5vw;
     }
 
     .col-lg-6.mt-5.left-img {
         max-width: 90vw;
-        margin-left: -5vw;
+        padding: 0;
+        left: 0;
     }
 
     .col-lg-6.mt-5.text-center {
         position: absolute;
+        left: 0;
         display: grid;
         align-content: center;
         font-size: 10px;
@@ -487,5 +493,9 @@ video {
 
     .commercial-two {
         margin-left: auto !important;
+    }
+
+    .left-img img{
+        left: -340px;
     }
 }
