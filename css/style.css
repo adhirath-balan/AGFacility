@@ -1,4 +1,4 @@
-body{
+body {
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -8,11 +8,11 @@ body{
     margin-left: 10vw;
 }
 
-a:hover{
+a:hover {
     text-decoration: none;
 }
 
-.navbar-bg{
+.navbar-bg {
     background-color: #191a1da8;
 }
 
@@ -30,7 +30,7 @@ a:hover{
 }
 
 
-.contact-us{
+.contact-us {
     position: fixed;
     right: 2em;
     bottom: 1em;
@@ -38,7 +38,7 @@ a:hover{
     padding-top: 10px;
 }
 
-.contact-us-hidden-one{
+.contact-us-hidden-one {
     position: fixed;
     right: 2em;
     bottom: 6em;
@@ -46,7 +46,7 @@ a:hover{
     padding-top: 10px;
 }
 
-.contact-us-hidden-two{
+.contact-us-hidden-two {
     position: fixed;
     right: 2em;
     bottom: 11em;
@@ -54,7 +54,7 @@ a:hover{
     padding-top: 10px;
 }
 
-.contact-us-hidden-three{
+.contact-us-hidden-three {
     position: fixed;
     right: 2em;
     bottom: 16em;
@@ -77,20 +77,20 @@ a:hover{
     transition: all 0.3s ease-in-out;
 }
 
-.logo-bg-secondPg{
+.logo-bg-secondPg {
     position: absolute;
     bottom: 0%;
     left: 37%;
 }
 
-.img-other{
+.img-other {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     height: 100vh;
 }
 
-.service_one{
+.service_one {
     background-image: url("../img/cleaning.jpg");
     margin-top: 10rem;
 }
@@ -103,124 +103,124 @@ a:hover{
     background-color: #153E5Ca8;
 }
 
-.tp_divone{
+.tp_divone {
     padding: 3rem;
     /* margin-top:10rem; */
 }
 
-.tp_innerdiv{
-    background-color:#153E5Ca8;
+.tp_innerdiv {
+    background-color: #153E5Ca8;
     margin: 3rem 0.01rem 7rem 1rem;
     transition: flex 0.1s linear;
 }
 
-.tp_innerdiv:hover{
+.tp_innerdiv:hover {
     flex: 0 0 44%;
     max-width: 44%;
 }
 
-.service-margin{
+.service-margin {
     margin-top: 10em;
 }
 
-.hover_left{
+.hover_left {
     z-index: 2;
 }
 
-.hover_center{
+.hover_center {
     z-index: 4;
 }
 
-.hover_right{
+.hover_right {
     z-index: 6;
 }
 
-a:hover{
+a:hover {
     text-decoration: none;
 }
 
-.service_two{
+.service_two {
     background-image: url("../img/technical.jpg");
 }
 
-.features{
+.features {
     margin-top: 2rem;
 }
 
-.feature-content{
+.feature-content {
     padding: 1.5em 0;
 }
 
-.service_three{
+.service_three {
     background-image: url("../img/other_services.jpg");
 }
 
-.icon{
+.icon {
     margin-top: 5rem;
     margin-bottom: 5rem;
 }
 
-.res-img{
+.res-img {
     background-image: url("../img/Residential-cleaning.jpg");
     width: 100vw;
     height: 100vh;
 
 }
 
-.ourServices{
+.ourServices {
     position: relative;
 }
 
-.res-hover{
+.res-hover {
     position: absolute;
     top: 0rem;
     right: 0rem;
     z-index: -1;
 }
 
-.commercial-img{
+.commercial-img {
     background-image: url("../img/commercial.jpg");
     width: 100vw;
     height: 100vh;
 }
 
-.plumbing-img{
+.plumbing-img {
     background-image: url("../img/plumbing.jpg");
     width: 100vw;
     height: 100vh;
 }
 
-.electrical-img{
+.electrical-img {
     background-image: url("../img/electrical.jpg");
     width: 100vw;
     height: 100vh;
 }
 
-.sewage-img{
+.sewage-img {
     background-image: url("../img/sewage.jpg");
     width: 100vw;
     height: 100vh;
 }
 
-.security-img{
+.security-img {
     background-image: url("../img/security.jpg");
     width: 100vw;
     height: 100vh;
 }
 
-.painting-img{
+.painting-img {
     background-image: url("../img/painting.jpg");
     width: 100vw;
     height: 100vh;
 }
 
-.furniture-img{
+.furniture-img {
     background-image: url("../img/furniture.jpg");
     width: 100vw;
     height: 100vh;
 }
 
-#aboutUs{
+#aboutUs {
     font-size: larger;
     height: 75vh;
     overflow-y: scroll;
@@ -231,28 +231,28 @@ a:hover{
     scrollbar-width: none;
 }
 
-#aboutUs::-webkit-scrollbar{
+#aboutUs::-webkit-scrollbar {
     display: none;
 }
 
-#aboutUs .card{
+#aboutUs .card {
     background-color: #ffffffbe;
 }
 
-.member-card{
+.member-card {
     overflow-x: scroll;
     display: flex;
     flex-wrap: nowrap;
     flex: 0 0 35%;
 }
 
-.grp-img{
+.grp-img {
     background-image: url("../img/group-pic.JPG");
     width: 100%;
     position: relative;
 }
 
-.grp-logo{
+.grp-logo {
     position: absolute;
     left: 35%;
     top: 15%;
@@ -263,7 +263,7 @@ a:hover{
     max-height: 68vh;
 }
 
-.grp-text{
+.grp-text {
     position: absolute;
     top: 21%;
     padding: 6%;
@@ -274,17 +274,17 @@ a:hover{
     font-size: 23px;
 }
 
-.grp-text:hover{
+.grp-text:hover {
     opacity: 1;
 }
 
-.overlay-img{
+.overlay-img {
     height: 500px;
     width: 500px;
     position: absolute;
 }
 
-.overlay{
+.overlay {
     background-color: black;
     position: absolute;
     height: 500px;
@@ -295,14 +295,14 @@ a:hover{
 
 /* Carousel Style */
 
-.carousel-btn{
+.carousel-btn {
     height: fit-content;
     top: 50%;
     background: none;
     border: none;
 }
 
-.gal-div{
+.gal-div {
     height: 520px;
     overflow-x: hidden;
     overflow-y: scroll;
@@ -310,16 +310,16 @@ a:hover{
     scrollbar-width: none;
 }
 
-.gal-div::-webkit-scrollbar{
+.gal-div::-webkit-scrollbar {
     display: none;
 }
 
-.gal-img-right{
+.gal-img-right {
     width: 100%;
     height: 100%;
 }
 
-#gallery{
+#gallery {
     position: absolute;
     width: 1200px;
     height: 520px;
@@ -328,7 +328,7 @@ a:hover{
     top: 25%;
 }
 
-#gal-overlay{
+#gal-overlay {
     background-color: rgba(0, 0, 0, 0.603);
     position: relative;
     top: 0;
@@ -337,26 +337,26 @@ a:hover{
     width: 100vw;
 }
 
-.gal-section{
+.gal-section {
     position: fixed;
     top: 0;
     z-index: 9;
 }
 
-.gal-section .container{
+.gal-section .container {
     position: absolute;
     top: 15%;
     left: 12%;
 }
 
-.gal-section .h2{
+.gal-section .h2 {
     background-color: rgba(255, 255, 255, 0.507);
     display: inline-block;
     width: 20vw;
     border-radius: 10px;
 }
 
-.fa-times{
+.fa-times {
     right: 0;
     position: absolute;
     top: 0.2em;
@@ -365,12 +365,12 @@ a:hover{
 
 /* Video */
 
-video{
+video {
     height: 100vh;
     width: 100%;
 }
 
-.member-card{
+.member-card {
     overflow-x: scroll;
     display: flex;
     flex-wrap: nowrap;
@@ -379,17 +379,17 @@ video{
 
 /* Styles for one.html */
 
-.oneHtml{
+.oneHtml {
     background-image: url("/img/simplified-logo-bg.png");
     background-size: 50%;
     background-position: center;
 }
 
-.content{
+.content {
     line-height: 185%;
 }
 
-.left-img{
+.left-img {
     overflow: hidden;
     height: 85vh;
     max-width: 40vw;
@@ -397,84 +397,95 @@ video{
     border-radius: 10px;
 }
 
-.left-img img{
+.left-img img {
     position: absolute;
     left: -240px;
 }
 
-.right-img{
+.right-img {
     position: absolute;
     right: -240px;
 }
 
-.bg-overlay{
+.bg-overlay {
     background-color: rgba(255, 255, 255, 0.671);
 }
+
 /* Media Queries */
 
 @media only screen and (max-width: 960px) {
-    .first_page{
+    .first_page {
         margin: 10vh 5vw 0 5vw;
     }
 
-    .second_page{
+    .second_page {
         margin: 0 5vw;
     }
 
-    .about-us{
+    .about-us {
         font-size: 10px;
-        width: 90vw!important;
+        width: 90vw !important;
     }
 
-    .bg-info{
+    .bg-info {
         padding: 0 35vw;
     }
 
-    .contact-us img{
-        width: 15vw;
+    .contact-us {
+        right: 1em;
     }
 
-    .contact-us-hidden-one{
+    .contact-us img {
+        width: 50px;
+    }
+
+    .contact-us-hidden-one {
         bottom: 4.1em;
     }
 
-    .contact-us-hidden-two{
+    .contact-us-hidden-two {
         bottom: 7.2em;
     }
 
-    .contact-us-hidden-three{
+    .contact-us-hidden-three {
         bottom: 10.3em;
     }
 
-    .oneHtml{
+    .oneHtml {
         background-size: 85%;
         background-position: center;
     }
 
-    .row.align-items-center.justify-content-center{
+    .row.align-items-center.justify-content-center {
         position: relative;
+        max-width: 90vw;
     }
 
-    .col-lg-6.mt-5.left-img{
+    .col-lg-6.mt-5.left-img {
         max-width: 90vw;
         margin-left: -5vw;
     }
 
-    .col-lg-6.mt-5.text-center{
+    .col-lg-6.mt-5.text-center {
         position: absolute;
-        right: 0;
+        display: grid;
+        align-content: center;
         font-size: 10px;
         padding: 0;
         background-color: #ffffff8c;
         height: 85vh;
         z-index: 2;
     }
-
-    .commercial-one{
-        right: -0.5em!important;
+    
+    .h1{
+        font-size: 2rem;
     }
 
-    .commercial-two{
-        margin-left: auto!important;
+    .commercial-one {
+        right: -0.5em !important;
+    }
+
+    .commercial-two {
+        margin-left: auto !important;
     }
 }
