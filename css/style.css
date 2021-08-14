@@ -293,7 +293,7 @@ a:hover {
     z-index: 1;
 }
 
-/* Carousel Style */
+/* Gallery Style */
 
 .carousel-btn {
     height: fit-content;
@@ -335,6 +335,14 @@ a:hover {
     z-index: -1;
     height: 100vh;
     width: 100vw;
+}
+
+.row .col-8{
+    height: 500px;
+}
+
+.gal-section i{
+    padding-top: 0.3rem;
 }
 
 .gal-section {
@@ -432,6 +440,17 @@ video {
         padding: 0 35vw;
     }
 
+    /* Gallery */
+
+    .gal-section .container h5{
+        width: 50vw;
+    }
+
+    .gal-section .container{
+        width: 80vw;
+    }
+
+    /* Contact Us  */
     .contact-us {
         right: 1em;
     }
@@ -454,6 +473,8 @@ video {
         right: 1rem;
         bottom: 10.3em;
     }
+
+    /* One Html */
 
     .oneHtml {
         background-size: 85%;
