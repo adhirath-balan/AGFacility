@@ -478,14 +478,20 @@ video {
         display: grid;
         align-content: center;
         font-size: 10px;
-        padding: 0;
+        padding: 5px 0px;
         background-color: #ffffff8c;
-        height: 85vh;
+        height: auto;
         z-index: 2;
     }
     
     .h1{
-        font-size: 2rem;
+        font-size: 4vh;
+        font-weight: 900;
+    }
+
+    .h6{
+        font-size: 2vh;
+        font-weight: 900;
     }
 
     .commercial-one {
@@ -498,5 +504,7 @@ video {
 
     .left-img img{
         left: -340px;
+        width: -webkit-fill-available;
+        width: -moz-available;
     }
 }
