@@ -322,6 +322,7 @@ a:hover {
 #gallery {
     position: absolute;
     width: 75vw;
+    height: 440px;
     left: 11vw;
     overflow-y: hidden;
     top: 25vh;
