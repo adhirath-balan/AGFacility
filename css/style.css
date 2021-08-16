@@ -303,7 +303,7 @@ a:hover {
 }
 
 .gal-div {
-    height: 520px;
+    height: 440px;
     overflow-x: hidden;
     overflow-y: scroll;
     -ms-overflow-style: none;
@@ -322,7 +322,7 @@ a:hover {
 #gallery {
     position: absolute;
     width: 1200px;
-    height: 520px;
+    height: 440px;
     left: 9%;
     overflow-y: hidden;
     top: 25%;
