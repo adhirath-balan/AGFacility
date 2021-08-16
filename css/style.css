@@ -321,7 +321,7 @@ a:hover {
 
 #gallery {
     position: absolute;
-    width: 78vw;
+    width: 75vw;
     left: 11vw;
     overflow-y: hidden;
     top: 25vh;
@@ -355,8 +355,8 @@ a:hover {
 
 .gal-section .container {
     position: absolute;
-    top: 15%;
-    left: 12%;
+    top: 15vh;
+    left: 11vw;
 }
 
 .gal-section .h2 {
