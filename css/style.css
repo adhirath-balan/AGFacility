@@ -456,6 +456,10 @@ video {
         padding: 0 35vw;
     }
 
+    .grp-sm-text{
+        font-size: 12px;
+    }
+
     /* Gallery */
 
     .gal-section .container h5{
