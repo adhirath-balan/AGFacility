@@ -303,7 +303,7 @@ a:hover {
 }
 
 .gal-div {
-    height: 440px;
+    height: 60vh;
     overflow-x: hidden;
     overflow-y: scroll;
     -ms-overflow-style: none;
@@ -321,11 +321,10 @@ a:hover {
 
 #gallery {
     position: absolute;
-    width: 1200px;
-    height: 440px;
-    left: 9%;
+    width: 75vw;
+    left: 11vw;
     overflow-y: hidden;
-    top: 25%;
+    top: 25vh;
 }
 
 #gallery .container-fluid{
@@ -369,8 +368,8 @@ a:hover {
 
 .gal-section .container {
     position: absolute;
-    top: 15%;
-    left: 12%;
+    top: 15vh;
+    left: 11vw;
 }
 
 .gal-section .h2 {
