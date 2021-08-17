@@ -460,6 +460,21 @@ video {
         font-size: 12px;
     }
 
+    .ourServices{
+        font-size: 10px;
+    }
+
+    .tp_divone{
+        padding: 0;
+        width: 90%;
+        left: 5%;
+        top: 10vh;
+    }
+
+    .servicesHeading{
+        font-size: 20px;
+    }
+
     /* Gallery */
 
     .gal-section .container h5{
