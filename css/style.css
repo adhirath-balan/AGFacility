@@ -466,13 +466,54 @@ video {
 
     .tp_divone{
         padding: 0;
-        width: 90%;
-        left: 5%;
+        width: 90vw;
+        left: 5vw;
         top: 10vh;
     }
 
     .servicesHeading{
+        margin: 2%;
         font-size: 20px;
+    }
+
+    .learnMore{
+        top: 70vh!important;
+        position: absolute;
+        margin: 0!important;
+        width: 56vw;
+        left: 18vw;
+    }
+
+    .tp_innerdiv{
+        margin: 0;
+        top: 20vh;
+        left: 7.5vw;
+        padding: 0;
+        width: 85vw;
+    }
+
+    .tp_innerdiv.hover_center{
+        top: 25vh!important;
+    }
+
+    .col-sm-3.tp_innerdiv{
+        left: 0;
+    }
+
+    .col-sm-3.tp_innerdiv.hover_left{
+        top: 15vh;
+    }
+
+    .col-sm-3.tp_innerdiv.hover_center{
+        top: 20vh!important;
+    }
+
+    .col-sm-3.tp_innerdiv.hover_right{
+        top: 25vh!important;
+    }
+
+    .lmTwo{
+        top: 75vh!important;
     }
 
     /* Gallery */
