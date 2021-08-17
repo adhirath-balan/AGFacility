@@ -303,7 +303,7 @@ a:hover {
 }
 
 .gal-div {
-    height: 60vh;
+    height: 58vh;
     overflow-x: hidden;
     overflow-y: scroll;
     -ms-overflow-style: none;
@@ -323,12 +323,13 @@ a:hover {
     position: absolute;
     width: 75vw;
     left: 11vw;
+    height: 58vh;
     overflow-y: hidden;
     top: 25vh;
 }
 
 #carouselExampleControls{
-    height: 60vh;
+    height: 58vh;
 }
 #gal-overlay {
     background-color: rgba(0, 0, 0, 0.603);
