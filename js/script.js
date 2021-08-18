@@ -2,7 +2,7 @@
 $(document).ready(function () {
 
     el_autohide = document.querySelector('.autohide');
-    
+
     if (el_autohide) {
         var last_scroll_top = 0;
         window.addEventListener('scroll', function () {
@@ -16,11 +16,11 @@ $(document).ready(function () {
             }
             last_scroll_top = scroll_top;
         });
-        
+
     }
 });
 
-$(document).ready(function(){
+$(document).ready(function () {
     var Navbar = document.querySelector('.navbar')
     if (Navbar) {
         var last_scroll_top = 0;
@@ -33,7 +33,7 @@ $(document).ready(function(){
             }
             last_scroll_top = scroll_top;
         });
-        
+
     }
 })
 
@@ -46,11 +46,11 @@ $(document).ready(function () {
 })
 
 //Contact Us
-function contactFunction(){
+function contactFunction() {
     document.getElementById("hidden-content").className = "d-inline"
 }
 
-function hideFunction(){
+function hideFunction() {
     document.getElementById("hidden-content").className = "d-none"
 }
 
@@ -65,38 +65,71 @@ function grpTextOut() {
     document.getElementsByClassName("grp-text")[0].style.zIndex = "0"
 }
 
+var size = window.matchMedia("(max-width: 500px)")
+
 // Commercial Hover
-function commercialIn(){
-    document.getElementsByClassName("res-hover")[0].style.zIndex = "1"
+function commercialIn() {
     document.getElementsByClassName("hover_center")[0].style.zIndex = "0"
     document.getElementsByClassName("dots")[0].classList.add("d-none")
     document.getElementsByClassName("expand")[0].classList.remove("d-none")
+    if (!size.matches) {
+        document.getElementsByClassName("res-hover")[0].style.zIndex = "1"
+
+    } else {
+        document.getElementsByClassName("feature-content")[0].classList.remove("d-none");
+        document.getElementsByClassName("close-service")[0].classList.remove("d-none");
+        document.getElementsByClassName("tp_innerdiv")[0].classList.add("show");
+        document.getElementsByClassName("tp_divone")[0].classList.add("d-none");
+    }
 }
 
-function commercialOut(){
-    document.getElementsByClassName("res-hover")[0].style.zIndex = "-1"
+function commercialOut() {
     document.getElementsByClassName("hover_center")[0].style.zIndex = "4"
     document.getElementsByClassName("dots")[0].classList.remove("d-none")
     document.getElementsByClassName("expand")[0].classList.add("d-none")
+    if (!size.matches) {
+        document.getElementsByClassName("res-hover")[0].style.zIndex = "-1"
+    } else {
+        document.getElementsByClassName("feature-content")[0].classList.add("d-none");
+        document.getElementsByClassName("close-service")[0].classList.add("d-none");
+        document.getElementsByClassName("tp_innerdiv")[0].classList.remove("show");
+        document.getElementsByClassName("tp_divone")[0].classList.remove("d-none");
+    }
 }
 
 // Home Hover
 
-function homeIn(){
-    document.getElementsByClassName("res-hover")[1].style.zIndex = "3"
+function homeIn() {
     document.getElementsByClassName("dots")[1].classList.add("d-none")
     document.getElementsByClassName("expand")[1].classList.remove("d-none")
+    if (!window.matchMedia("(max-width: 500px)").matches) {
+        document.getElementsByClassName("res-hover")[1].style.zIndex = "3"
+    } else {
+        document.getElementsByClassName("tp_innerdiv")[1].classList.add("show")
+        document.getElementsByClassName("hover_left")[0].classList.add("d-none")
+        document.getElementsByClassName("tp_divone")[0].classList.add("d-none")
+        document.getElementsByClassName("feature-content")[1].classList.remove("d-none")
+        document.getElementsByClassName("close-service")[1].classList.remove("d-none")
+    }
 }
 
-function homeOut(){
-    document.getElementsByClassName("res-hover")[1].style.zIndex = "-1"
+function homeOut() {
     document.getElementsByClassName("dots")[1].classList.remove("d-none")
     document.getElementsByClassName("expand")[1].classList.add("d-none")
- }
+    if (!size.matches) {
+        document.getElementsByClassName("res-hover")[1].style.zIndex = "-1"
+    } else {
+        document.getElementsByClassName("hover_left")[0].classList.remove("d-none")
+        document.getElementsByClassName("feature-content")[1].classList.add("d-none");
+        document.getElementsByClassName("close-service")[1].classList.add("d-none");
+        document.getElementsByClassName("tp_innerdiv")[1].classList.remove("show");
+        document.getElementsByClassName("tp_divone")[0].classList.remove("d-none");
+    }
+}
 
 // Plumbing Hover
 
-function plumbingIn(){
+function plumbingIn() {
     document.getElementsByClassName("res-hover")[2].style.zIndex = "1"
     document.getElementsByClassName("hover_center")[1].style.zIndex = "0"
     document.getElementsByClassName("hover_right")[0].style.zIndex = "0"
@@ -104,7 +137,7 @@ function plumbingIn(){
     document.getElementsByClassName("expand")[2].classList.remove("d-none")
 }
 
-function plumbingOut(){
+function plumbingOut() {
     document.getElementsByClassName("res-hover")[2].style.zIndex = "-1"
     document.getElementsByClassName("hover_center")[1].style.zIndex = "4"
     document.getElementsByClassName("hover_right")[0].style.zIndex = "6"
@@ -114,14 +147,14 @@ function plumbingOut(){
 
 // Electrical Hover
 
-function electricalIn(){
+function electricalIn() {
     document.getElementsByClassName("res-hover")[3].style.zIndex = "3"
     document.getElementsByClassName("hover_right")[0].style.zIndex = "0"
     document.getElementsByClassName("dots")[3].classList.add("d-none")
     document.getElementsByClassName("expand")[3].classList.remove("d-none")
 }
 
-function electricalOut(){
+function electricalOut() {
     document.getElementsByClassName("res-hover")[3].style.zIndex = "-1"
     document.getElementsByClassName("hover_right")[0].style.zIndex = "6"
     document.getElementsByClassName("dots")[3].classList.remove("d-none")
@@ -130,13 +163,13 @@ function electricalOut(){
 
 // Sewage Hover
 
-function sewageIn(){
+function sewageIn() {
     document.getElementsByClassName("res-hover")[4].style.zIndex = "5"
     document.getElementsByClassName("dots")[4].classList.add("d-none")
     document.getElementsByClassName("expand")[4].classList.remove("d-none")
 }
 
-function sewageOut(){
+function sewageOut() {
     document.getElementsByClassName("res-hover")[4].style.zIndex = "-1"
     document.getElementsByClassName("dots")[4].classList.remove("d-none")
     document.getElementsByClassName("expand")[4].classList.add("d-none")
@@ -144,7 +177,7 @@ function sewageOut(){
 
 // Security Hover
 
-function securityIn(){
+function securityIn() {
     document.getElementsByClassName("res-hover")[5].style.zIndex = "1"
     document.getElementsByClassName("hover_center")[2].style.zIndex = "0"
     document.getElementsByClassName("hover_right")[1].style.zIndex = "0"
@@ -152,7 +185,7 @@ function securityIn(){
     document.getElementsByClassName("expand")[5].classList.remove("d-none")
 }
 
-function securityOut(){
+function securityOut() {
     document.getElementsByClassName("res-hover")[5].style.zIndex = "-1"
     document.getElementsByClassName("hover_center")[2].style.zIndex = "4"
     document.getElementsByClassName("hover_right")[1].style.zIndex = "6"
@@ -162,14 +195,14 @@ function securityOut(){
 
 // Painting Hover
 
-function paintingIn(){
+function paintingIn() {
     document.getElementsByClassName("res-hover")[6].style.zIndex = "3"
     document.getElementsByClassName("hover_right")[1].style.zIndex = "0"
     document.getElementsByClassName("dots")[6].classList.add("d-none")
     document.getElementsByClassName("expand")[6].classList.remove("d-none")
 }
 
-function paintingOut(){
+function paintingOut() {
     document.getElementsByClassName("res-hover")[6].style.zIndex = "-1"
     document.getElementsByClassName("hover_right")[1].style.zIndex = "6"
     document.getElementsByClassName("dots")[6].classList.remove("d-none")
@@ -178,13 +211,13 @@ function paintingOut(){
 
 // Furniture Hover
 
-function furnitureIn(){
+function furnitureIn() {
     document.getElementsByClassName("res-hover")[7].style.zIndex = "5"
     document.getElementsByClassName("dots")[7].classList.add("d-none")
     document.getElementsByClassName("expand")[7].classList.remove("d-none")
 }
 
-function furnitureOut(){
+function furnitureOut() {
     document.getElementsByClassName("res-hover")[7].style.zIndex = "-1"
     document.getElementsByClassName("dots")[7].classList.remove("d-none")
     document.getElementsByClassName("expand")[7].classList.add("d-none")
@@ -206,24 +239,24 @@ function grpTextOut() {
 
 // Gallery Function
 
-function galFunc(img){
+function galFunc(img) {
 
     document.getElementsByClassName("carousel-item active")[0].classList.remove("active");
 
     var carouselElements = document.getElementsByClassName("carousel-item");
 
-    for(let i=0; i<carouselElements.length; i++) {
-        if( (carouselElements[i].children[0].src == img.src) ){
+    for (let i = 0; i < carouselElements.length; i++) {
+        if ((carouselElements[i].children[0].src == img.src)) {
             carouselElements[i].classList.add("active");
             break;
         }
     }
 }
 
-function openGallery(){
+function openGallery() {
     document.getElementsByClassName("gal-section")[0].classList.remove("d-none");
 }
 
-function closeGallery(){
+function closeGallery() {
     document.getElementsByClassName("gal-section")[0].classList.add("d-none");
 }
