@@ -331,6 +331,8 @@ a:hover {
 
 #carouselExampleControls{
     height: 58vh;
+}
+
 #gallery .container-fluid{
     height: 100%;
 }
@@ -474,9 +476,24 @@ video {
         top: 10vh;
     }
 
+    .cleaning{
+        background: none;
+        border: none;
+    }
+
+    .cleaning div {
+        background-color: #ffffffa8;
+        border-radius: 0.3rem;
+    }
+
     .servicesHeading{
         margin: 2%;
         font-size: 20px;
+    }
+
+    .otherservicesHeading{
+        margin: 2%;
+        font-size: 18px;
     }
 
     .learnMore{
@@ -490,9 +507,10 @@ video {
     .tp_innerdiv{
         margin: 0;
         top: 20vh;
-        left: 7.5vw;
+        left: 10vw;
         padding: 0;
-        width: 85vw;
+        width: 80vw;
+        border-radius: 0.3rem;
     }
 
     .tp_innerdiv.hover_center{
@@ -517,6 +535,26 @@ video {
 
     .lmTwo{
         top: 75vh!important;
+    }
+
+    .sm-logo{
+        right: -25vw;
+    }
+
+    .sm-logo-effect{
+        transform: translateX(-25vw);
+        transition: all 1s ease-in-out;
+    }
+
+    .sm-text{
+        left: -25vw;
+        z-index: -1;
+        opacity: 0;
+    }
+
+    .sm-text-effect{
+        transform: translateX(25vw);
+        transition: all 1s ease-in-out;
     }
 
     /* Gallery */
