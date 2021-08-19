@@ -697,10 +697,10 @@ video {
     }
 
     /* Our services */
-    /* .tp_innerdiv:hover{
+    .tp_innerdiv:hover{
         flex: 0 0 100%;
         max-width: 100vw;
-    } */
+    }
     .tp_innerdiv.hover_center:hover{
         top: 0;
     }
