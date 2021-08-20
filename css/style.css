@@ -707,12 +707,18 @@ video {
 
     /* Our services */
 
+    .tp_innerdiv i{
+        right: 2vw;
+    }
+
     .tp_innerdiv:hover{
         flex: 0 0 100%;
         max-width: 100vw;
     }
 
-    .tp_innerdiv.hover_center.showServices{
+    .tp_innerdiv.hover_center.showServices,
+    .tp_innerdiv.hover_right.showServices
+    {
         top: 0!important;
     }
 
