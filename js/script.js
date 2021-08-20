@@ -389,3 +389,4 @@ function openGallery() {
 function closeGallery() {
     document.getElementsByClassName("gal-section")[0].classList.add("d-none");
 }
+
