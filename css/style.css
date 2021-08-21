@@ -293,6 +293,10 @@ a:hover {
     z-index: 1;
 }
 
+.bg-navy{
+    background-color: #153E5C;
+}
+
 /* Gallery Style */
 
 .carousel-btn {
@@ -538,24 +542,28 @@ video {
         top: 75vh !important;
     }
 
+    /* logo slide */
     .sm-logo {
         right: -25vw;
-    }
-
-    .sm-logo-effect {
-        transform: translateX(-25vw);
-        transition: all 1s ease-in-out;
     }
 
     .sm-text {
         left: -25vw;
         z-index: -1;
         opacity: 0;
+        transition: opacity 500ms ease-in;
     }
 
-    .sm-text-effect {
+    .sm-text.appear{
+        opacity: 1;
         transform: translateX(25vw);
-        transition: all 1s ease-in-out;
+    }
+    .sm-logo.appear{
+        transform: translateX(-25vw);
+    }
+
+    .sm-text,.sm-logo {
+        transition: transform 1s ease-in;
     }
 
     /* Gallery */
