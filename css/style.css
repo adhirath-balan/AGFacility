@@ -555,7 +555,7 @@ video {
         left: -25vw;
         z-index: -1;
         opacity: 0;
-        transition: opacity 500ms ease-in;
+        transition: opacity 1s ease-in;
     }
 
     .sm-text.appear{
