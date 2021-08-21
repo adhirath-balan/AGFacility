@@ -105,12 +105,13 @@ a:hover {
 
 .tp_divone {
     padding: 3rem;
-    /* margin-top:10rem; */
 }
 
 .tp_innerdiv {
     background-color: #153E5Ca8;
     margin: 3rem 0.01rem 7rem 1rem;
+    border-radius: 10px;
+    height: 70vh;
     transition: flex 0.1s linear;
 }
 
@@ -148,7 +149,7 @@ a:hover {
 }
 
 .feature-content {
-    padding: 1.5em 0;
+    padding: 1.5em 1em;
 }
 
 .service_three {
@@ -169,6 +170,7 @@ a:hover {
 
 .ourServices {
     position: relative;
+    height: 100vh;
 }
 
 .res-hover {
@@ -176,6 +178,7 @@ a:hover {
     top: 0rem;
     right: 0rem;
     z-index: -1;
+    height: 100vh;
 }
 
 .commercial-img {
@@ -514,6 +517,7 @@ video {
         top: 20vh;
         left: 10vw;
         padding: 0;
+        height: auto;
         width: 80vw;
         border-radius: 0.3rem;
     }
