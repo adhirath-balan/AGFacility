@@ -30,10 +30,10 @@
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <div class="row align-items-center">
-                        <div class="col-2 ml-3 ml-lg-0">
+                        <a class="col-2 ml-3 ml-lg-0" href="index.html">
                             <img src="img/white-logo.png" alt="Logo" class="d-inline-block align-text-top" height="50"
                                 width="50">
-                        </div>
+                        </a>
                     </div>
                 </a>
                 <button class="navbar-toggler mr-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
@@ -51,7 +51,7 @@
                             <a class="nav-link text-white" href="one.html">OUR SERVICES</a>
                         </li>
                         <li class="nav-item px-4 text-right">
-                            <a class="nav-link text-white" href="#aboutUs">ABOUT US</a>
+                            <a class="nav-link text-white" href="index.html#aboutUs">ABOUT US</a>
                         </li>
                         <li class="nav-item px-4 text-right">
                             <p class="nav-link text-white d-md-inline d-sm-inline-block" onclick="openGallery()" style="cursor: pointer;">GALLERY</p>
@@ -158,6 +158,25 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section class="contact-main">
+        <div class="contact-us" onmouseenter="contactFunction()" onmouseleave="hideFunction()">
+            <img src="img/contact us detail.png" alt="contactUs">
+            <div class="d-none" id="hidden-content">
+                <div class="contact-us-hidden-one">
+                    <a href="#footer"><img src="img/More info.png" alt="More Info"></a>
+                </div>
+                <div class="contact-us-hidden-two">
+                    <a href=""><img src="img/Mail.png" alt="Contact Mail"></a>
+                </div>
+                <div class="contact-us-hidden-three">
+                    <a href=""><img src="img/whatsapp.png" alt="Contact WhatsApp"></a>
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <section class="container-fluid bg-overlay py-5">
@@ -280,18 +299,18 @@
 
     <!-- Footer -->
     <footer id="footer">
-        <div class="bg-primary">
+        <div class="bg-navy">
             <div class="row mx-0 p-5">
                 <div class=" col-lg-2">
                     <p>START A PROJECT
                         <br>
-                        We are ready for the challenge
                         <br>
-                        adobexd@mail.com
+                        We are ready for the challenge
                     </p>
                 </div>
                 <div class=" col-lg-2">
                     <p>Say Hello!
+                        <br>
                         <br>
                         #3, 6th Street,
                         <br>
@@ -302,6 +321,7 @@
                 </div>
                 <div class="col-lg-2">
                     <p>For enquiries
+                        <br>
                         <br>
                         agfmschennai@gmail.com
                         <br>

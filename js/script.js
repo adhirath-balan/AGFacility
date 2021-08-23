@@ -67,6 +67,10 @@ function grpTextOut() {
 
 var size = window.matchMedia("(max-width: 500px)")
 
+var Commercial = document.getElementsByClassName("tp_innerdiv")[0];
+
+// Commercial.addEventListener(onclick,commercialIn);
+
 // Commercial Hover
 function commercialIn() {
     document.getElementsByClassName("hover_center")[0].style.zIndex = "0"
@@ -80,6 +84,10 @@ function commercialIn() {
         document.getElementsByClassName("tp_innerdiv")[0].classList.add("showServices");
         document.getElementsByClassName("tp_innerdiv")[0].style.flex = "0 0 100%"
         document.getElementsByClassName("tp_divone")[0].classList.add("d-none");
+        document.getElementsByClassName("tp_innerdiv")[0].removeAttribute("onmouseenter");
+        document.getElementsByClassName("tp_innerdiv")[0].setAttribute("onmouseenter","commercialOut()");
+
+        // document.getElementsByClassName("tp_innerdiv")[0].addEventListener(onmouseenter,commercialOut);
     }
 }
 
