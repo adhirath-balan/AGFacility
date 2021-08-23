@@ -260,6 +260,8 @@ a:hover {
     left: 35%;
     top: 15%;
     opacity: 0.2;
+    height: 500px;
+    width: 500px;
     background-repeat: no-repeat;
     background-size: initial;
     max-width: 32.3vw;
@@ -267,13 +269,11 @@ a:hover {
 }
 
 .grp-text {
-    position: absolute;
-    top: 21%;
-    padding: 6%;
-    opacity: 0;
-    z-index: 2;
-    width: 33%;
-    left: 35%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 0 10%;
     font-size: 23px;
 }
 
@@ -285,6 +285,8 @@ a:hover {
     height: 500px;
     width: 500px;
     position: absolute;
+    left: 0;
+    z-index: -2;
 }
 
 .overlay {
@@ -293,7 +295,7 @@ a:hover {
     height: 500px;
     width: 500px;
     opacity: 0.7;
-    z-index: 1;
+    z-index: -1;
 }
 
 .bg-navy{
