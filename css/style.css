@@ -417,7 +417,7 @@ video {
 /* Styles for one.html */
 
 .oneHtml {
-    background-image: url("/img/simplified-logo-bg.png");
+    background-image: url("../img/simplified-logo-bg.png");
     background-size: 50%;
     background-position: center;
 }
