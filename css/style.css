@@ -34,7 +34,7 @@ a:hover {
     position: fixed;
     right: 2em;
     bottom: 1em;
-    z-index: 2;
+    z-index: 25;
     padding-top: 10px;
 }
 
