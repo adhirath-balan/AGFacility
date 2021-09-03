@@ -731,6 +731,10 @@ video {
         width: -moz-available;
     }
 
+    .securityServicesImage{
+        left: -140px!important;
+    }
+
     /* Our services */
 
     .tp_innerdiv i{
