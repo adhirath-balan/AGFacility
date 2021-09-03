@@ -418,12 +418,34 @@ function galFunc(img) {
     }
 }
 
+// Gallery
+
+var gallery; //global variable
+
 function openGallery() {
     document.getElementsByClassName("gal-section")[0].classList.remove("d-none");
+    if (gallery === undefined) getGallery();
 }
 
 function closeGallery() {
     document.getElementsByClassName("gal-section")[0].classList.add("d-none");
+}
+
+function getGallery(){
+	let xhr = new XMLHttpRequest();
+	var gallerydiv = document.getElementById("gallery");
+    gallerydiv.innerHTML = '<div class="preloader"></div>'
+	xhr.open('GET','/gallery.html');
+	xhr.responseType = 'text';
+	xhr.send();
+	xhr.onload = function() {
+		if (xhr.status != 200) {
+	        gallerydiv.innerHTML = '<div class="responseError"><p>Error in loading page...<br>Please try reopening gallery</p></div>';
+		} else{
+            gallery = xhr.responseText
+			gallerydiv.innerHTML = gallery;
+		}
+	}
 }
 
 const faders = document.querySelectorAll(".fade-in");

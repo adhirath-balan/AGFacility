@@ -225,7 +225,7 @@ a:hover {
 
 #aboutUs {
     font-size: larger;
-    height: 75vh;
+    height: 100vh;
     overflow-y: scroll;
     background-image: url("../img/simplified-logo-bg.png");
     background-repeat: no-repeat;
@@ -236,6 +236,10 @@ a:hover {
 
 #aboutUs::-webkit-scrollbar {
     display: none;
+}
+
+.about-us{
+    width: 65%;
 }
 
 #aboutUs .card {
@@ -373,6 +377,14 @@ a:hover {
 
 .gal-section i {
     padding-top: 0.3rem;
+}
+
+.preloader {
+    background-image: url("../img/Bar-Preloader-1.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
 }
 
 .gal-section {
