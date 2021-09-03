@@ -8,8 +8,15 @@ body {
     margin-left: 10vw;
 }
 
-a:hover {
+a:hover,
+.aTag:hover {
     text-decoration: none;
+    color: blueviolet!important;
+}
+
+.btn-learn:hover{
+    color: rgb(0, 0, 0)!important;
+    background-color: #ffffffa8;
 }
 
 .navbar-bg {
