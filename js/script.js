@@ -592,11 +592,11 @@ sliders.forEach(slider => {
 // Video
 
 function playVideo(){
-
     document.getElementById("video-wrapper").className += " d-none";
     let videoSec = document.getElementById("video-sec");
     vidEle = document.createElement('video');
     vidEle.setAttribute('controls','');
+    vidEle.setAttribute('autoplay','')
     vidEle.setAttribute('poster','img/video-poster.png');
     vidSrc = document.createElement('source');
     vidSrc.setAttribute('type','video/mp4');
