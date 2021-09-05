@@ -51,21 +51,22 @@ function contactFunction() {
     let id = null;
     let pos = 0;
     clearInterval(id)
-    id = setInterval(frame,2.5);
+    id = setInterval(frame, 2.5);
+
     function frame() {
         pos++;
         if (pos > 60) {
             clearInterval(id);
-        } else{
+        } else {
             let x = pos;
-            if (size.matches){ 
-                x = 3*pos/5 +.4;
-                if(x/4>3) x+=.1;
-                else if(x/4>6) x+=.2;
+            if (size.matches) {
+                x = 3 * pos / 5 + .4;
+                if (x / 4 > 3) x += .1;
+                else if (x / 4 > 6) x += .2;
             }
-            document.getElementsByClassName("contact-us-hidden-one")[0].style.bottom = x/12 + 'em';
-            document.getElementsByClassName("contact-us-hidden-two")[0].style.bottom = 2*x/12 + 'em';
-            document.getElementsByClassName("contact-us-hidden-three")[0].style.bottom = x/4 + 'em';
+            document.getElementsByClassName("contact-us-hidden-one")[0].style.bottom = x / 12 + 'em';
+            document.getElementsByClassName("contact-us-hidden-two")[0].style.bottom = 2 * x / 12 + 'em';
+            document.getElementsByClassName("contact-us-hidden-three")[0].style.bottom = x / 4 + 'em';
         }
     }
 }
@@ -74,22 +75,23 @@ function hideFunction() {
     let id = null;
     let pos = 30;
     clearInterval(id)
-    id = setInterval(frame,2.5);
+    id = setInterval(frame, 2.5);
+
     function frame() {
         pos--;
         if (pos < 0) {
             clearInterval(id);
             document.getElementById("hidden-content").className = "d-none";
-        } else{
+        } else {
             let x = pos
-            if (size.matches){ 
-                x = 3*pos/5 +.2;
-                if(x/2>3) x+=.1;
-                else if(x/2>6) x+=.2;
+            if (size.matches) {
+                x = 3 * pos / 5 + .2;
+                if (x / 2 > 3) x += .1;
+                else if (x / 2 > 6) x += .2;
             }
-            document.getElementsByClassName("contact-us-hidden-one")[0].style.bottom = x/6 + 'em';
-            document.getElementsByClassName("contact-us-hidden-two")[0].style.bottom = 2*x/6 + 'em';
-            document.getElementsByClassName("contact-us-hidden-three")[0].style.bottom = x/2 + 'em';
+            document.getElementsByClassName("contact-us-hidden-one")[0].style.bottom = x / 6 + 'em';
+            document.getElementsByClassName("contact-us-hidden-two")[0].style.bottom = 2 * x / 6 + 'em';
+            document.getElementsByClassName("contact-us-hidden-three")[0].style.bottom = x / 2 + 'em';
         }
     }
 }
@@ -509,9 +511,10 @@ function galFunc(img) {
 
 var gallery; //global variable
 
-var carouselDiv ;
-var thumbnailDiv ;
+var carouselDiv;
+var thumbnailDiv;
 var images = [];
+
 function preload(x) {
     for (var i = 1; i <= x; i++) {
         images[i] = new Image();
@@ -522,26 +525,26 @@ function preload(x) {
 function openGallery() {
     document.getElementsByClassName("gal-section")[0].classList.remove("d-none");
     //if (gallery === undefined) getGallery();
-    if(carouselDiv === undefined && thumbnailDiv === undefined ){
+    if (carouselDiv === undefined && thumbnailDiv === undefined) {
         noOfImgs = 24;
         preload(noOfImgs);
         carouselDiv = document.createElement('div');
         carouselDiv.className = "carousel-inner";
         thumbnailDiv = document.createElement('div');
         thumbnailDiv.className = "row";
-        for(i = 1; i <= noOfImgs; i++){
+        for (i = 1; i <= noOfImgs; i++) {
             var carouselImg = new Image();
             carouselImg.src = `img/gallery/${i}.jpg`;
             carouselImg.className = "d-block gal-img-right";
             carouselImg.alt = '...';
             var carouselTemp = document.createElement('div');
-            carouselTemp.className =  "carousel-item";
+            carouselTemp.className = "carousel-item";
             carouselTemp.appendChild(carouselImg);
             var thumbnailImg = new Image();
             thumbnailImg.src = `img/gallery/${i}.jpg`;
             thumbnailImg.className = "gal-img-right";
             thumbnailImg.alt = '...';
-            thumbnailImg.setAttribute('onclick','galFunc(this)');
+            thumbnailImg.setAttribute('onclick', 'galFunc(this)');
             var thumbnailTemp = document.createElement('div');
             thumbnailTemp.className = "col-6 m-0 p-0";
             thumbnailTemp.appendChild(thumbnailImg);
@@ -569,19 +572,19 @@ const appearOptions = {
     threshold: 1
 };
 
-const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll){
-entries.forEach(entry => {
-    if(!entry.isIntersecting){
-        return;
-    }else{
-        entry.target.classList.add("appear");
-        appearOnScroll.unobserve(entry.target);
-    }
-});
-},
-appearOptions);
+const appearOnScroll = new IntersectionObserver(function (entries, appearOnScroll) {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) {
+                return;
+            } else {
+                entry.target.classList.add("appear");
+                appearOnScroll.unobserve(entry.target);
+            }
+        });
+    },
+    appearOptions);
 
-faders.forEach(fader =>{
+faders.forEach(fader => {
     appearOnScroll.observe(fader);
 });
 
@@ -591,16 +594,16 @@ sliders.forEach(slider => {
 
 // Video
 
-function playVideo(){
+function playVideo() {
     document.getElementById("video-wrapper").className += " d-none";
     let videoSec = document.getElementById("video-sec");
     vidEle = document.createElement('video');
-    vidEle.setAttribute('controls','');
-    vidEle.setAttribute('autoplay','')
-    vidEle.setAttribute('poster','img/video-poster.png');
+    vidEle.setAttribute('controls', '');
+    vidEle.setAttribute('autoplay', '')
+    vidEle.setAttribute('poster', 'img/video-poster.png');
     vidSrc = document.createElement('source');
-    vidSrc.setAttribute('type','video/mp4');
-    vidSrc.setAttribute('src','video/AGVideo.mp4');
+    vidSrc.setAttribute('type', 'video/mp4');
+    vidSrc.setAttribute('src', 'video/AGVideo.mp4');
     vidEle.appendChild(vidSrc);
     videoSec.appendChild(vidEle);
 }
