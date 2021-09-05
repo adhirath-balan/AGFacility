@@ -47,11 +47,51 @@ $(document).ready(function () {
 
 //Contact Us
 function contactFunction() {
-    document.getElementById("hidden-content").className = "d-inline"
+    document.getElementById("hidden-content").className = "d-inline";
+    let id = null;
+    let pos = 0;
+    clearInterval(id)
+    id = setInterval(frame,2.5);
+    function frame() {
+        pos++;
+        if (pos > 60) {
+            clearInterval(id);
+        } else{
+            let x = pos;
+            if (size.matches){ 
+                x = 3*pos/5 +.4;
+                if(x/4>3) x+=.1;
+                else if(x/4>6) x+=.2;
+            }
+            document.getElementsByClassName("contact-us-hidden-one")[0].style.bottom = x/12 + 'em';
+            document.getElementsByClassName("contact-us-hidden-two")[0].style.bottom = 2*x/12 + 'em';
+            document.getElementsByClassName("contact-us-hidden-three")[0].style.bottom = x/4 + 'em';
+        }
+    }
 }
 
 function hideFunction() {
-    document.getElementById("hidden-content").className = "d-none"
+    let id = null;
+    let pos = 30;
+    clearInterval(id)
+    id = setInterval(frame,2.5);
+    function frame() {
+        pos--;
+        if (pos < 0) {
+            clearInterval(id);
+            document.getElementById("hidden-content").className = "d-none";
+        } else{
+            let x = pos
+            if (size.matches){ 
+                x = 3*pos/5 +.2;
+                if(x/2>3) x+=.1;
+                else if(x/2>6) x+=.2;
+            }
+            document.getElementsByClassName("contact-us-hidden-one")[0].style.bottom = x/6 + 'em';
+            document.getElementsByClassName("contact-us-hidden-two")[0].style.bottom = 2*x/6 + 'em';
+            document.getElementsByClassName("contact-us-hidden-three")[0].style.bottom = x/2 + 'em';
+        }
+    }
 }
 
 // Grp Text Hover 
@@ -68,63 +108,63 @@ function grpTextOut() {
 var size = window.matchMedia("(max-width: 500px)")
 
 // Commercial Hover
+
 function commercialIn() {
-    document.getElementsByClassName("hover_center")[0].style.zIndex = "0"
     document.getElementsByClassName("dots")[0].classList.add("d-none")
     document.getElementsByClassName("expand")[0].classList.remove("d-none")
     if (!size.matches) {
         document.getElementsByClassName("res-hover")[0].style.zIndex = "1"
+        document.getElementsByClassName("hover_center")[0].style.zIndex = "0"
+        document.getElementsByClassName("hover_right")[0].style.zIndex = "0"
         document.getElementsByClassName("feature-content")[0].classList.add("text-justify");
-        document.getElementsByClassName("hover_right")[0].classList.add("d-none")
-        if(window.innerWidth > 1500){
-            document.getElementsByClassName("feature-content")[0].style.lineHeight = "2";
-        }
+        document.getElementsByClassName("feature-content")[0].style.lineHeight = "2";
     } else {
-        document.getElementsByClassName("feature-content")[0].classList.remove("d-none");
-        document.getElementsByClassName("close-service")[0].classList.remove("d-none");
+        document.getElementsByClassName("hover_center")[0].classList.add("d-none")
         document.getElementsByClassName("hover_right")[0].classList.add("d-none")
-        document.getElementsByClassName("tp_innerdiv")[0].classList.add("showServices");
+        document.getElementsByClassName("tp_innerdiv")[0].classList.add("showServices")
         document.getElementsByClassName("tp_innerdiv")[0].style.flex = "0 0 100%"
-        document.getElementsByClassName("tp_divone")[0].classList.add("d-none");
+        document.getElementsByClassName("tp_divone")[0].classList.add("d-none")
+        document.getElementsByClassName("feature-content")[0].classList.remove("d-none")
+        document.getElementsByClassName("close-service")[0].classList.remove("d-none")
     }
 }
 
 function commercialOut() {
-    document.getElementsByClassName("hover_center")[0].style.zIndex = "4"
     document.getElementsByClassName("dots")[0].classList.remove("d-none")
     document.getElementsByClassName("expand")[0].classList.add("d-none")
     if (!size.matches) {
         document.getElementsByClassName("res-hover")[0].style.zIndex = "-1"
+        document.getElementsByClassName("hover_center")[0].style.zIndex = "4"
+        document.getElementsByClassName("hover_right")[0].style.zIndex = "6"
         document.getElementsByClassName("feature-content")[0].classList.remove("text-justify");
-        document.getElementsByClassName("hover_right")[0].classList.remove("d-none")
         document.getElementsByClassName("feature-content")[0].style.lineHeight = "1.5"
     } else {
-        document.getElementsByClassName("feature-content")[0].classList.add("d-none");
-        document.getElementsByClassName("close-service")[0].classList.add("d-none");
+        document.getElementsByClassName("hover_center")[0].classList.remove("d-none")
         document.getElementsByClassName("hover_right")[0].classList.remove("d-none")
-        document.getElementsByClassName("tp_innerdiv")[0].classList.remove("showServices");
+        document.getElementsByClassName("tp_innerdiv")[0].classList.remove("showServices")
         document.getElementsByClassName("tp_innerdiv")[0].style.flex = "0 0 80%"
-        document.getElementsByClassName("tp_divone")[0].classList.remove("d-none");
+        document.getElementsByClassName("tp_divone")[0].classList.remove("d-none")
+        document.getElementsByClassName("feature-content")[0].classList.add("d-none")
+        document.getElementsByClassName("close-service")[0].classList.add("d-none")
     }
 }
 
 // Home Hover
 
 function homeIn() {
+
     document.getElementsByClassName("dots")[1].classList.add("d-none")
     document.getElementsByClassName("expand")[1].classList.remove("d-none")
     if (!window.matchMedia("(max-width: 500px)").matches) {
         document.getElementsByClassName("res-hover")[1].style.zIndex = "3"
-        document.getElementsByClassName("hover_right")[0].classList.add("d-none")
+        document.getElementsByClassName("hover_right")[0].style.zIndex = "0"
         document.getElementsByClassName("feature-content")[1].classList.add("text-justify");
-        if(window.innerWidth > 1500){
-            document.getElementsByClassName("feature-content")[1].style.lineHeight = "2";
-        }
+        document.getElementsByClassName("feature-content")[1].style.lineHeight = "2";
     } else {
         document.getElementsByClassName("tp_innerdiv")[1].classList.add("showServices")
         document.getElementsByClassName("tp_innerdiv")[1].style.flex = "0 0 100%"
-        document.getElementsByClassName("hover_right")[0].classList.add("d-none")
         document.getElementsByClassName("hover_left")[0].classList.add("d-none")
+        document.getElementsByClassName("hover_right")[0].classList.add("d-none")
         document.getElementsByClassName("tp_divone")[0].classList.add("d-none")
         document.getElementsByClassName("feature-content")[1].classList.remove("d-none")
         document.getElementsByClassName("close-service")[1].classList.remove("d-none")
@@ -132,25 +172,24 @@ function homeIn() {
 }
 
 function homeOut() {
+
     document.getElementsByClassName("dots")[1].classList.remove("d-none")
     document.getElementsByClassName("expand")[1].classList.add("d-none")
-    if (!size.matches) {
+    if (!window.matchMedia("(max-width: 500px)").matches) {
         document.getElementsByClassName("res-hover")[1].style.zIndex = "-1"
-        document.getElementsByClassName("hover_right")[0].classList.remove("d-none")
+        document.getElementsByClassName("hover_right")[0].style.zIndex = "6"
         document.getElementsByClassName("feature-content")[1].classList.remove("text-justify");
         document.getElementsByClassName("feature-content")[1].style.lineHeight = "1.5"
     } else {
-        document.getElementsByClassName("hover_left")[0].classList.remove("d-none")
-        document.getElementsByClassName("feature-content")[1].classList.add("d-none");
-        document.getElementsByClassName("close-service")[1].classList.add("d-none");
-        document.getElementsByClassName("hover_right")[0].classList.remove("d-none")
-        document.getElementsByClassName("tp_innerdiv")[1].classList.remove("showServices");
+        document.getElementsByClassName("tp_innerdiv")[1].classList.remove("showServices")
         document.getElementsByClassName("tp_innerdiv")[1].style.flex = "0 0 80%"
-        document.getElementsByClassName("tp_divone")[0].classList.remove("d-none");
+        document.getElementsByClassName("hover_left")[0].classList.remove("d-none")
+        document.getElementsByClassName("hover_right")[0].classList.remove("d-none")
+        document.getElementsByClassName("tp_divone")[0].classList.remove("d-none")
+        document.getElementsByClassName("feature-content")[1].classList.add("d-none")
+        document.getElementsByClassName("close-service")[1].classList.add("d-none")
     }
 }
-
-// Pest Control hover
 
 function pestIn() {
 
@@ -199,16 +238,16 @@ function plumbingIn() {
         document.getElementsByClassName("res-hover")[3].style.zIndex = "1"
         document.getElementsByClassName("hover_center")[1].style.zIndex = "0"
         document.getElementsByClassName("hover_right")[1].style.zIndex = "0"
-        document.getElementsByClassName("feature-content")[2].classList.add("text-justify");
-        document.getElementsByClassName("feature-content")[2].style.lineHeight = "2";
+        document.getElementsByClassName("feature-content")[3].classList.add("text-justify");
+        document.getElementsByClassName("feature-content")[3].style.lineHeight = "2";
     } else {
-        document.getElementsByClassName("tp_innerdiv")[2].classList.add("showServices")
-        document.getElementsByClassName("tp_innerdiv")[2].style.flex = "0 0 100%"
-        document.getElementsByClassName("hover_center")[2].classList.add("d-none")
+        document.getElementsByClassName("tp_innerdiv")[3].classList.add("showServices")
+        document.getElementsByClassName("tp_innerdiv")[3].style.flex = "0 0 100%"
+        document.getElementsByClassName("hover_center")[1].classList.add("d-none")
         document.getElementsByClassName("hover_right")[1].classList.add("d-none")
         document.getElementsByClassName("tp_divone")[1].classList.add("d-none")
-        document.getElementsByClassName("feature-content")[2].classList.remove("d-none")
-        document.getElementsByClassName("close-service")[2].classList.remove("d-none")
+        document.getElementsByClassName("feature-content")[3].classList.remove("d-none")
+        document.getElementsByClassName("close-service")[3].classList.remove("d-none")
     }
 }
 
@@ -219,16 +258,16 @@ function plumbingOut() {
         document.getElementsByClassName("res-hover")[3].style.zIndex = "-1"
         document.getElementsByClassName("hover_center")[1].style.zIndex = "4"
         document.getElementsByClassName("hover_right")[1].style.zIndex = "6"
-        document.getElementsByClassName("feature-content")[2].classList.remove("text-justify");
-        document.getElementsByClassName("feature-content")[2].style.lineHeight = "1.5"
+        document.getElementsByClassName("feature-content")[3].classList.remove("text-justify");
+        document.getElementsByClassName("feature-content")[3].style.lineHeight = "1.5"
     } else {
-        document.getElementsByClassName("tp_innerdiv")[2].classList.remove("showServices")
-        document.getElementsByClassName("tp_innerdiv")[2].style.flex = "0 0 80%"
-        document.getElementsByClassName("hover_center")[2].classList.remove("d-none")
+        document.getElementsByClassName("tp_innerdiv")[3].classList.remove("showServices")
+        document.getElementsByClassName("tp_innerdiv")[3].style.flex = "0 0 80%"
+        document.getElementsByClassName("hover_center")[1].classList.remove("d-none")
         document.getElementsByClassName("hover_right")[1].classList.remove("d-none")
         document.getElementsByClassName("tp_divone")[1].classList.remove("d-none")
-        document.getElementsByClassName("feature-content")[2].classList.add("d-none")
-        document.getElementsByClassName("close-service")[2].classList.add("d-none")
+        document.getElementsByClassName("feature-content")[3].classList.add("d-none")
+        document.getElementsByClassName("close-service")[3].classList.add("d-none")
     }
 }
 
@@ -241,16 +280,16 @@ function electricalIn() {
     if (!window.matchMedia("(max-width: 500px)").matches) {
         document.getElementsByClassName("res-hover")[4].style.zIndex = "3"
         document.getElementsByClassName("hover_right")[1].style.zIndex = "0"
-        document.getElementsByClassName("feature-content")[3].classList.add("text-justify");
-        document.getElementsByClassName("feature-content")[3].style.lineHeight = "2";
+        document.getElementsByClassName("feature-content")[4].classList.add("text-justify");
+        document.getElementsByClassName("feature-content")[4].style.lineHeight = "2";
     } else {
-        document.getElementsByClassName("tp_innerdiv")[3].classList.add("showServices")
-        document.getElementsByClassName("tp_innerdiv")[3].style.flex = "0 0 100%"
+        document.getElementsByClassName("tp_innerdiv")[4].classList.add("showServices")
+        document.getElementsByClassName("tp_innerdiv")[4].style.flex = "0 0 100%"
         document.getElementsByClassName("hover_left")[1].classList.add("d-none")
         document.getElementsByClassName("hover_right")[1].classList.add("d-none")
         document.getElementsByClassName("tp_divone")[1].classList.add("d-none")
-        document.getElementsByClassName("feature-content")[3].classList.remove("d-none")
-        document.getElementsByClassName("close-service")[3].classList.remove("d-none")
+        document.getElementsByClassName("feature-content")[4].classList.remove("d-none")
+        document.getElementsByClassName("close-service")[4].classList.remove("d-none")
     }
 }
 
@@ -260,16 +299,16 @@ function electricalOut() {
     if (!window.matchMedia("(max-width: 500px)").matches) {
         document.getElementsByClassName("res-hover")[4].style.zIndex = "-1"
         document.getElementsByClassName("hover_right")[1].style.zIndex = "6"
-        document.getElementsByClassName("feature-content")[3].classList.remove("text-justify");
-        document.getElementsByClassName("feature-content")[3].style.lineHeight = "1.5"
+        document.getElementsByClassName("feature-content")[4].classList.remove("text-justify");
+        document.getElementsByClassName("feature-content")[4].style.lineHeight = "1.5"
     } else {
-        document.getElementsByClassName("tp_innerdiv")[3].classList.remove("showServices")
-        document.getElementsByClassName("tp_innerdiv")[3].style.flex = "0 0 80%"
+        document.getElementsByClassName("tp_innerdiv")[4].classList.remove("showServices")
+        document.getElementsByClassName("tp_innerdiv")[4].style.flex = "0 0 80%"
         document.getElementsByClassName("hover_left")[1].classList.remove("d-none")
         document.getElementsByClassName("hover_right")[1].classList.remove("d-none")
         document.getElementsByClassName("tp_divone")[1].classList.remove("d-none")
-        document.getElementsByClassName("feature-content")[3].classList.add("d-none")
-        document.getElementsByClassName("close-service")[3].classList.add("d-none")
+        document.getElementsByClassName("feature-content")[4].classList.add("d-none")
+        document.getElementsByClassName("close-service")[4].classList.add("d-none")
     }
 }
 
@@ -280,16 +319,16 @@ function sewageIn() {
     document.getElementsByClassName("expand")[5].classList.remove("d-none")
     if (!window.matchMedia("(max-width: 500px)").matches) {
         document.getElementsByClassName("res-hover")[5].style.zIndex = "5"
-        document.getElementsByClassName("feature-content")[4].classList.add("text-justify");
-        document.getElementsByClassName("feature-content")[4].style.lineHeight = "2";
+        document.getElementsByClassName("feature-content")[5].classList.add("text-justify");
+        document.getElementsByClassName("feature-content")[5].style.lineHeight = "2";
     } else {
-        document.getElementsByClassName("tp_innerdiv")[4].classList.add("showServices")
-        document.getElementsByClassName("tp_innerdiv")[4].style.flex = "0 0 100%"
+        document.getElementsByClassName("tp_innerdiv")[5].classList.add("showServices")
+        document.getElementsByClassName("tp_innerdiv")[5].style.flex = "0 0 100%"
         document.getElementsByClassName("hover_left")[1].classList.add("d-none")
         document.getElementsByClassName("hover_center")[1].classList.add("d-none")
         document.getElementsByClassName("tp_divone")[1].classList.add("d-none")
-        document.getElementsByClassName("feature-content")[4].classList.remove("d-none")
-        document.getElementsByClassName("close-service")[4].classList.remove("d-none")
+        document.getElementsByClassName("feature-content")[5].classList.remove("d-none")
+        document.getElementsByClassName("close-service")[5].classList.remove("d-none")
     }
 }
 
@@ -298,16 +337,16 @@ function sewageOut() {
     document.getElementsByClassName("expand")[5].classList.add("d-none")
     if (!window.matchMedia("(max-width: 500px)").matches) {
         document.getElementsByClassName("res-hover")[5].style.zIndex = "-1"
-        document.getElementsByClassName("feature-content")[4].classList.remove("text-justify");
-        document.getElementsByClassName("feature-content")[4].style.lineHeight = "1.5"
+        document.getElementsByClassName("feature-content")[5].classList.remove("text-justify");
+        document.getElementsByClassName("feature-content")[5].style.lineHeight = "1.5"
     } else {
-        document.getElementsByClassName("tp_innerdiv")[4].classList.remove("showServices")
-        document.getElementsByClassName("tp_innerdiv")[4].style.flex = "0 0 80%"
+        document.getElementsByClassName("tp_innerdiv")[5].classList.remove("showServices")
+        document.getElementsByClassName("tp_innerdiv")[5].style.flex = "0 0 80%"
         document.getElementsByClassName("hover_left")[1].classList.remove("d-none")
         document.getElementsByClassName("hover_center")[1].classList.remove("d-none")
         document.getElementsByClassName("tp_divone")[1].classList.remove("d-none")
-        document.getElementsByClassName("feature-content")[4].classList.add("d-none")
-        document.getElementsByClassName("close-service")[4].classList.add("d-none")
+        document.getElementsByClassName("feature-content")[5].classList.add("d-none")
+        document.getElementsByClassName("close-service")[5].classList.add("d-none")
     }
 
 }
@@ -321,16 +360,16 @@ function securityIn() {
         document.getElementsByClassName("res-hover")[6].style.zIndex = "1"
         document.getElementsByClassName("hover_center")[2].style.zIndex = "0"
         document.getElementsByClassName("hover_right")[2].style.zIndex = "0"
-        document.getElementsByClassName("feature-content")[5].classList.add("text-justify");
-        document.getElementsByClassName("feature-content")[5].style.lineHeight = "2";
+        document.getElementsByClassName("feature-content")[6].classList.add("text-justify");
+        document.getElementsByClassName("feature-content")[6].style.lineHeight = "2";
     } else {
         document.getElementsByClassName("hover_center")[2].classList.add("d-none")
-        document.getElementsByClassName("hover_right")[1].classList.add("d-none")
-        document.getElementsByClassName("tp_innerdiv")[5].classList.add("showServices")
-        document.getElementsByClassName("tp_innerdiv")[5].style.flex = "0 0 100%"
+        document.getElementsByClassName("hover_right")[2].classList.add("d-none")
+        document.getElementsByClassName("tp_innerdiv")[6].classList.add("showServices")
+        document.getElementsByClassName("tp_innerdiv")[6].style.flex = "0 0 100%"
         document.getElementsByClassName("tp_divone")[2].classList.add("d-none")
-        document.getElementsByClassName("feature-content")[5].classList.remove("d-none")
-        document.getElementsByClassName("close-service")[5].classList.remove("d-none")
+        document.getElementsByClassName("feature-content")[6].classList.remove("d-none")
+        document.getElementsByClassName("close-service")[6].classList.remove("d-none")
     }
 }
 
@@ -341,16 +380,16 @@ function securityOut() {
         document.getElementsByClassName("res-hover")[6].style.zIndex = "-1"
         document.getElementsByClassName("hover_center")[2].style.zIndex = "4"
         document.getElementsByClassName("hover_right")[2].style.zIndex = "6"
-        document.getElementsByClassName("feature-content")[5].classList.remove("text-justify");
-        document.getElementsByClassName("feature-content")[5].style.lineHeight = "1.5"
+        document.getElementsByClassName("feature-content")[6].classList.remove("text-justify");
+        document.getElementsByClassName("feature-content")[6].style.lineHeight = "1.5"
     } else {
         document.getElementsByClassName("hover_center")[2].classList.remove("d-none")
-        document.getElementsByClassName("hover_right")[1].classList.remove("d-none")
-        document.getElementsByClassName("tp_innerdiv")[5].classList.remove("showServices")
-        document.getElementsByClassName("tp_innerdiv")[5].style.flex = "0 0 80%"
+        document.getElementsByClassName("hover_right")[2].classList.remove("d-none")
+        document.getElementsByClassName("tp_innerdiv")[6].classList.remove("showServices")
+        document.getElementsByClassName("tp_innerdiv")[6].style.flex = "0 0 80%"
         document.getElementsByClassName("tp_divone")[2].classList.remove("d-none")
-        document.getElementsByClassName("feature-content")[5].classList.add("d-none")
-        document.getElementsByClassName("close-service")[5].classList.add("d-none")
+        document.getElementsByClassName("feature-content")[6].classList.add("d-none")
+        document.getElementsByClassName("close-service")[6].classList.add("d-none")
     }
 }
 
@@ -363,16 +402,16 @@ function paintingIn() {
     if (!window.matchMedia("(max-width: 500px)").matches) {
         document.getElementsByClassName("res-hover")[7].style.zIndex = "3"
         document.getElementsByClassName("hover_right")[2].style.zIndex = "0"
-        document.getElementsByClassName("feature-content")[6].classList.add("text-justify");
-        document.getElementsByClassName("feature-content")[6].style.lineHeight = "2";
+        document.getElementsByClassName("feature-content")[7].classList.add("text-justify");
+        document.getElementsByClassName("feature-content")[7].style.lineHeight = "2";
     } else {
-        document.getElementsByClassName("tp_innerdiv")[6].classList.add("showServices")
-        document.getElementsByClassName("tp_innerdiv")[6].style.flex = "0 0 100%"
+        document.getElementsByClassName("tp_innerdiv")[7].classList.add("showServices")
+        document.getElementsByClassName("tp_innerdiv")[7].style.flex = "0 0 100%"
         document.getElementsByClassName("hover_left")[2].classList.add("d-none")
         document.getElementsByClassName("hover_right")[2].classList.add("d-none")
         document.getElementsByClassName("tp_divone")[2].classList.add("d-none")
-        document.getElementsByClassName("feature-content")[6].classList.remove("d-none")
-        document.getElementsByClassName("close-service")[6].classList.remove("d-none")
+        document.getElementsByClassName("feature-content")[7].classList.remove("d-none")
+        document.getElementsByClassName("close-service")[7].classList.remove("d-none")
     }
 }
 
@@ -383,16 +422,16 @@ function paintingOut() {
     if (!window.matchMedia("(max-width: 500px)").matches) {
         document.getElementsByClassName("res-hover")[7].style.zIndex = "-1"
         document.getElementsByClassName("hover_right")[2].style.zIndex = "6"
-        document.getElementsByClassName("feature-content")[6].classList.remove("text-justify");
-        document.getElementsByClassName("feature-content")[6].style.lineHeight = "1.5"
+        document.getElementsByClassName("feature-content")[7].classList.remove("text-justify");
+        document.getElementsByClassName("feature-content")[7].style.lineHeight = "1.5"
     } else {
-        document.getElementsByClassName("tp_innerdiv")[6].classList.remove("showServices")
-        document.getElementsByClassName("tp_innerdiv")[6].style.flex = "0 0 80%"
+        document.getElementsByClassName("tp_innerdiv")[7].classList.remove("showServices")
+        document.getElementsByClassName("tp_innerdiv")[7].style.flex = "0 0 80%"
         document.getElementsByClassName("hover_left")[2].classList.remove("d-none")
         document.getElementsByClassName("hover_right")[2].classList.remove("d-none")
         document.getElementsByClassName("tp_divone")[2].classList.remove("d-none")
-        document.getElementsByClassName("feature-content")[6].classList.add("d-none")
-        document.getElementsByClassName("close-service")[6].classList.add("d-none")
+        document.getElementsByClassName("feature-content")[7].classList.add("d-none")
+        document.getElementsByClassName("close-service")[7].classList.add("d-none")
     }
 }
 
@@ -404,16 +443,16 @@ function furnitureIn() {
     document.getElementsByClassName("expand")[8].classList.remove("d-none")
     if (!window.matchMedia("(max-width: 500px)").matches) {
         document.getElementsByClassName("res-hover")[8].style.zIndex = "5"
-        document.getElementsByClassName("feature-content")[7].classList.add("text-justify");
-        document.getElementsByClassName("feature-content")[7].style.lineHeight = "2";
+        document.getElementsByClassName("feature-content")[8].classList.add("text-justify");
+        document.getElementsByClassName("feature-content")[8].style.lineHeight = "2";
     } else {
-        document.getElementsByClassName("tp_innerdiv")[7].classList.add("showServices")
-        document.getElementsByClassName("tp_innerdiv")[7].style.flex = "0 0 100%"
+        document.getElementsByClassName("tp_innerdiv")[8].classList.add("showServices")
+        document.getElementsByClassName("tp_innerdiv")[8].style.flex = "0 0 100%"
         document.getElementsByClassName("hover_left")[2].classList.add("d-none")
         document.getElementsByClassName("hover_center")[2].classList.add("d-none")
         document.getElementsByClassName("tp_divone")[2].classList.add("d-none")
-        document.getElementsByClassName("feature-content")[7].classList.remove("d-none")
-        document.getElementsByClassName("close-service")[7].classList.remove("d-none")
+        document.getElementsByClassName("feature-content")[8].classList.remove("d-none")
+        document.getElementsByClassName("close-service")[8].classList.remove("d-none")
     }
 }
 
@@ -423,16 +462,16 @@ function furnitureOut() {
     document.getElementsByClassName("expand")[8].classList.add("d-none")
     if (!window.matchMedia("(max-width: 500px)").matches) {
         document.getElementsByClassName("res-hover")[8].style.zIndex = "-1"
-        document.getElementsByClassName("feature-content")[7].classList.remove("text-justify");
-        document.getElementsByClassName("feature-content")[7].style.lineHeight = "1.5"
+        document.getElementsByClassName("feature-content")[8].classList.remove("text-justify");
+        document.getElementsByClassName("feature-content")[8].style.lineHeight = "1.5"
     } else {
-        document.getElementsByClassName("tp_innerdiv")[7].classList.remove("showServices")
-        document.getElementsByClassName("tp_innerdiv")[7].style.flex = "0 0 80%"
+        document.getElementsByClassName("tp_innerdiv")[8].classList.remove("showServices")
+        document.getElementsByClassName("tp_innerdiv")[8].style.flex = "0 0 80%"
         document.getElementsByClassName("hover_left")[2].classList.remove("d-none")
         document.getElementsByClassName("hover_center")[2].classList.remove("d-none")
         document.getElementsByClassName("tp_divone")[2].classList.remove("d-none")
-        document.getElementsByClassName("feature-content")[7].classList.add("d-none")
-        document.getElementsByClassName("close-service")[7].classList.add("d-none")
+        document.getElementsByClassName("feature-content")[8].classList.add("d-none")
+        document.getElementsByClassName("close-service")[8].classList.add("d-none")
     }
 }
 
@@ -470,30 +509,57 @@ function galFunc(img) {
 
 var gallery; //global variable
 
+var carouselDiv ;
+var thumbnailDiv ;
+var images = [];
+function preload(x) {
+    for (var i = 1; i <= x; i++) {
+        images[i] = new Image();
+        images[i].src = `img/gallery/${i}.jpg`;
+    }
+}
+
 function openGallery() {
     document.getElementsByClassName("gal-section")[0].classList.remove("d-none");
-    if (gallery === undefined) getGallery();
+    //if (gallery === undefined) getGallery();
+    if(carouselDiv === undefined && thumbnailDiv === undefined ){
+        noOfImgs = 24;
+        preload(noOfImgs);
+        carouselDiv = document.createElement('div');
+        carouselDiv.className = "carousel-inner";
+        thumbnailDiv = document.createElement('div');
+        thumbnailDiv.className = "row";
+        for(i = 1; i <= noOfImgs; i++){
+            var carouselImg = new Image();
+            carouselImg.src = `img/gallery/${i}.jpg`;
+            carouselImg.className = "d-block gal-img-right";
+            carouselImg.alt = '...';
+            var carouselTemp = document.createElement('div');
+            carouselTemp.className =  "carousel-item";
+            carouselTemp.appendChild(carouselImg);
+            var thumbnailImg = new Image();
+            thumbnailImg.src = `img/gallery/${i}.jpg`;
+            thumbnailImg.className = "gal-img-right";
+            thumbnailImg.alt = '...';
+            thumbnailImg.setAttribute('onclick','galFunc(this)');
+            var thumbnailTemp = document.createElement('div');
+            thumbnailTemp.className = "col-6 m-0 p-0";
+            thumbnailTemp.appendChild(thumbnailImg);
+            carouselDiv.appendChild(carouselTemp);
+            thumbnailDiv.appendChild(thumbnailTemp);
+        }
+        document.getElementById('galThumbnail').appendChild(thumbnailDiv);
+        galCarousel = document.getElementById('carouselExampleControls');
+        galCarousel.prepend(carouselDiv);
+        galCarousel.getElementsByClassName("carousel-item")[0].className += " active";
+        var gallerydiv = document.getElementById("gallery");
+        gallerydiv.getElementsByClassName("preloader")[0].className += " d-none"
+        gallerydiv.getElementsByClassName("container-fluid")[0].className = "container-fluid"
+    }
 }
 
 function closeGallery() {
     document.getElementsByClassName("gal-section")[0].classList.add("d-none");
-}
-
-function getGallery(){
-	let xhr = new XMLHttpRequest();
-	var gallerydiv = document.getElementById("gallery");
-    gallerydiv.innerHTML = '<div class="preloader"></div>'
-	xhr.open('GET','/gallery.html');
-	xhr.responseType = 'text';
-	xhr.send();
-	xhr.onload = function() {
-		if (xhr.status != 200) {
-	        gallerydiv.innerHTML = '<div class="responseError"><p>Error in loading page...<br>Please try reopening gallery</p></div>';
-		} else{
-            gallery = xhr.responseText
-			gallerydiv.innerHTML = gallery;
-		}
-	}
 }
 
 const faders = document.querySelectorAll(".fade-in");
@@ -522,3 +588,19 @@ faders.forEach(fader =>{
 sliders.forEach(slider => {
     appearOnScroll.observe(slider);
 });
+
+// Video
+
+function playVideo(){
+
+    document.getElementById("video-wrapper").className += " d-none";
+    let videoSec = document.getElementById("video-sec");
+    vidEle = document.createElement('video');
+    vidEle.setAttribute('controls','');
+    vidEle.setAttribute('poster','img/video-poster.png');
+    vidSrc = document.createElement('source');
+    vidSrc.setAttribute('type','video/mp4');
+    vidSrc.setAttribute('src','video/AGVideo.mp4');
+    vidEle.appendChild(vidSrc);
+    videoSec.appendChild(vidEle);
+}
