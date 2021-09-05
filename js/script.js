@@ -110,7 +110,7 @@ function grpTextOut() {
 var size = window.matchMedia("(max-width: 500px)")
 
 // Commercial Hover
-
+var i = 0.0;
 function commercialIn() {
     document.getElementsByClassName("dots")[0].classList.add("d-none")
     document.getElementsByClassName("expand")[0].classList.remove("d-none")
@@ -120,6 +120,21 @@ function commercialIn() {
         document.getElementsByClassName("hover_right")[0].style.zIndex = "0"
         document.getElementsByClassName("feature-content")[0].classList.add("text-justify");
         document.getElementsByClassName("feature-content")[0].style.lineHeight = "2";
+        // document.getElementsByClassName("res-hover")[0].style.opacity = 0;
+        // var interval = setInterval(opacityIncrease(),10);
+        
+        // function opacityIncrease() {
+        //     if(i >= 100){
+        //         clearInterval(interval);
+        //     }else{
+        //         i++;
+        //     console.log(i);
+        //     document.getElementsByClassName("res-hover")[0].style.opacity = ( (i) / 100);
+        //     console.log(document.getElementsByClassName("res-hover")[0].style.opacity);
+        //     }
+            
+        // }
+        
     } else {
         document.getElementsByClassName("hover_center")[0].classList.add("d-none")
         document.getElementsByClassName("hover_right")[0].classList.add("d-none")
@@ -534,14 +549,14 @@ function openGallery() {
         thumbnailDiv.className = "row";
         for (i = 1; i <= noOfImgs; i++) {
             var carouselImg = new Image();
-            carouselImg.src = `img/gallery/${i}.jpg`;
+            carouselImg.src = `/gallery/${i}.jpg`;
             carouselImg.className = "d-block gal-img-right";
             carouselImg.alt = '...';
             var carouselTemp = document.createElement('div');
             carouselTemp.className = "carousel-item";
             carouselTemp.appendChild(carouselImg);
             var thumbnailImg = new Image();
-            thumbnailImg.src = `img/gallery/${i}.jpg`;
+            thumbnailImg.src = `/gallery/${i}.jpg`;
             thumbnailImg.className = "gal-img-right";
             thumbnailImg.alt = '...';
             thumbnailImg.setAttribute('onclick', 'galFunc(this)');

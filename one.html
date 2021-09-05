@@ -64,18 +64,46 @@
         </nav>
     </header>
 
-    <!-- Gallery -->
+    <!-- Gallery Section -->
+
     <section class="gal-section d-none">
+
         <div class="container text-center">
             <h5 class="h2 text-center p-2">GALLERY</h5>
             <i class="fas fa-times text-white fa-2x" onclick="closeGallery()"></i>
         </div>
+
         <!-- Gallery Overlay -->
+
         <div id="gal-overlay" class="container-fluid"></div>
+
         <!-- Gallery -->
+
         <div id="gallery">
-            <!--moved portion-->
+            <div class="preloader"></div>
+            <div class="container-fluid d-none">
+                <div class="row">
+                    <div class="col-lg-8 m-0 p-0 pr-md-1">
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel"
+                            data-bs-interval=false>
+                            <button class="carousel-control-prev carousel-btn" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next carousel-btn" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 p-0 gal-div" id="galThumbnail">
+                    </div>
+                </div>
+            </div>
         </div>
+
     </section>
 
     <!-- Contact Us -->
@@ -154,11 +182,8 @@
         </div>
 
         <!-- pest control -->
-        <div class="row align-items-center ml-lg-auto justify-content-center">
-            <div class="col-lg-6 mt-5 left-img">
-                <img src="img-one/residential-cleaning.JPG" alt="Residential Cleaning Image" class="h-100">
-            </div>
-            <div class="col-lg-6 mt-5 text-center">
+        <div class="row align-items-center mr-auto justify-content-center">
+            <div class="col-lg-6 mt-5 text-center commercial-one">
                 <p class="h1 text-muted text-center">Pest Control Services</p>
                 <p class="p-3 h6 content">Have you noticed a pest or insects in the garage or in the kitchen at
                     night? Then we lend our helping hand to provide a solution to your pest problem. Keeping your home
@@ -168,28 +193,13 @@
                     safety.
                 </p>
             </div>
-        </div>
-
-        <!-- plumbing -->
-        <div class="row align-items-center mr-auto justify-content-center" id="two">
-            <div class="col-lg-6 mt-5 text-center commercial-one">
-                <p class="h1 text-muted text-center">Plumbing Maintenance</p>
-                <p class="content h6 p-3">Although the pipes and drains connected to your property have immense
-                    resilience but yet they are unnoticed. Because of this less importance they are subjected to an
-                    extensive damage. We are here to provide our professional qualified plumber to repair and maintain
-                    and provide peace of mind to our beloved customers. A plumbing repair and maintenance encompasses
-                    addressing wide range of problems like drainage block, failure of water pumps, leaky taps and pipes,
-                    slow movement of drain or any plumbing problems we are on it. We can also provide full plumbing and
-                    piping works required for new houses.</p>
-                </p>
-            </div>
             <div class="col-lg-6 mt-5 left-img commercial-two">
-                <img src="img-one/comercial-cleaning.JPG" alt="Commercial Commercial Image" class="right-img h-100">
+                <img src="img-one/residential-cleaning.JPG" alt="Residential Cleaning Image" class="right-img h-100">
             </div>
         </div>
 
         <!-- electrical -->
-        <div class="row align-items-center ml-lg-auto justify-content-center">
+        <div class="row align-items-center ml-lg-auto justify-content-center" id="two">
             <div class="col-lg-6 mt-5 left-img">
                 <img src="img-one/electrical-maintenance.jpg" alt="Residential Cleaning Image" class="h-100">
             </div>
@@ -240,6 +250,24 @@
             </div>
         </div>
 
+        <!-- plumbing -->
+        <div class="row align-items-center ml-lg-auto justify-content-center">
+            <div class="col-lg-6 mt-5 text-center commercial-one">
+                <p class="h1 text-muted text-center">Plumbing Maintenance</p>
+                <p class="content h6 p-3">Although the pipes and drains connected to your property have immense
+                    resilience but yet they are unnoticed. Because of this less importance they are subjected to an
+                    extensive damage. We are here to provide our professional qualified plumber to repair and maintain
+                    and provide peace of mind to our beloved customers. A plumbing repair and maintenance encompasses
+                    addressing wide range of problems like drainage block, failure of water pumps, leaky taps and pipes,
+                    slow movement of drain or any plumbing problems we are on it. We can also provide full plumbing and
+                    piping works required for new houses.</p>
+                </p>
+            </div>
+            <div class="col-lg-6 mt-5 left-img commercial-two">
+                <img src="img-one/comercial-cleaning.JPG" alt="Commercial Commercial Image" class="right-img h-100">
+            </div>
+        </div>
+
         <!-- Air Condition -->
         <div class="row align-items-center ml-lg-auto justify-content-center">
             <div class="col-lg-6 mt-5 left-img">
@@ -260,7 +288,7 @@
         </div>
 
         <!-- security -->
-        <div class="row align-items-center mr-auto justify-content-center">
+        <div class="row align-items-center mr-auto justify-content-center" id="three">
             <div class="col-lg-6 mt-5 text-center commercial-one">
                 <p class="h1 text-muted text-center">Security Services</p>
                 <p class="content h6 p-3">We as a company offer the professional security services in Chennai to various
@@ -276,24 +304,6 @@
             <div class="col-lg-6 mt-5 left-img security commercial-two">
                 <img src="img-one/security.jpg" alt="Commercial Commercial Image"
                     class="right-img h-100 securityServicesImage">
-            </div>
-        </div>
-        
-        <!-- painting -->
-        <div class="row align-items-center mr-auto justify-content-center" id="three">
-            <div class="col-lg-6 mt-5 text-center commercial-one">
-                <p class="h1 text-muted text-center">Painting</p>
-                <p class="content h6 p-3">Thought of painting your home then here we are extending our support in
-                    painting your home. We take care of this process from start to finish from shifting of the
-                    appliances and thing of the room to be painted to scraping out the old paint, cleaning the wall,
-                    applying the primer or distemper, required number of wall putty and selected paint coating all the
-                    painting process are taken care and deliver effectively at the onset of customer flexibility. We
-                    offer exterior, interior painting, wood painting for wooden furniture and doors and painting of
-                    metal furniture.
-                </p>
-            </div>
-            <div class="col-lg-6 mt-5 left-img commercial-two">
-                <img src="img-one/comercial-cleaning.JPG" alt="Commercial Commercial Image" class="right-img h-100">
             </div>
         </div>
 
@@ -328,8 +338,23 @@
             </div>
         </div>
 
-        
-
+        <!-- painting -->
+        <div class="row align-items-center ml-lg-auto justify-content-center">
+            <div class="col-lg-6 mt-5 left-img">
+                <img src="img-one/comercial-cleaning.JPG" alt="Commercial Commercial Image" class="h-100">
+            </div>
+            <div class="col-lg-6 mt-5 text-center">
+                <p class="h1 text-muted text-center">Painting</p>
+                <p class="content h6 p-3">Thought of painting your home then here we are extending our support in
+                    painting your home. We take care of this process from start to finish from shifting of the
+                    appliances and thing of the room to be painted to scraping out the old paint, cleaning the wall,
+                    applying the primer or distemper, required number of wall putty and selected paint coating all the
+                    painting process are taken care and deliver effectively at the onset of customer flexibility. We
+                    offer exterior, interior painting, wood painting for wooden furniture and doors and painting of
+                    metal furniture.
+                </p>
+            </div>
+        </div>
         
     </section>
 
