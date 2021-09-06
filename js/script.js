@@ -533,7 +533,7 @@ var images = [];
 function preload(x) {
     for (var i = 1; i <= x; i++) {
         images[i] = new Image();
-        images[i].src = `../gallery/${i}.jpg`;
+        images[i].src = `../gallery/${i}.JPG`;
     }
 }
 
@@ -549,14 +549,14 @@ function openGallery() {
         thumbnailDiv.className = "row";
         for (i = 1; i <= noOfImgs; i++) {
             var carouselImg = new Image();
-            carouselImg.src = `gallery/${i}.jpg`;
+            carouselImg.src = `gallery/${i}.JPG`;
             carouselImg.className = "d-block gal-img-right";
             carouselImg.alt = '...';
             var carouselTemp = document.createElement('div');
             carouselTemp.className = "carousel-item";
             carouselTemp.appendChild(carouselImg);
             var thumbnailImg = new Image();
-            thumbnailImg.src = `gallery/${i}.jpg`;
+            thumbnailImg.src = `gallery/${i}.JPG`;
             thumbnailImg.className = "gal-img-right";
             thumbnailImg.alt = '...';
             thumbnailImg.setAttribute('onclick', 'galFunc(this)');
