@@ -533,7 +533,7 @@ var images = [];
 function preload(x) {
     for (var i = 1; i <= x; i++) {
         images[i] = new Image();
-        images[i].src = `img/gallery/${i}.jpg`;
+        images[i].src = '../img/gallery/${i}.jpg';
     }
 }
 
