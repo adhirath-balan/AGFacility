@@ -531,15 +531,7 @@ video {
     right: -240px !important;
 }
 
-/* .paint-one{
-    overflow: hidden;
-    height: 85vh;
-    max-width: 40vw;
-    left: 1%;
-    border-radius: 10px;
-} */
-
-.paint-one {
+.one-paint {
     position: absolute !important;
     left: 0 !important;
     border-radius: 10px !important;
@@ -841,7 +833,7 @@ video {
 
     .one-bath {
         width: auto !important;
-        left: -300px !important;
+        /* left: -300px !important; */
     }
 
     .one-pest {
@@ -855,6 +847,10 @@ video {
     }
 
     .one-tank{
+        height: 100%!important;
+    }
+
+    .one-paint{
         height: 100%!important;
     }
 
