@@ -565,6 +565,10 @@ video {
         margin: 0 5vw;
     }
 
+    .service_three{
+        background-position: center;
+    }
+
     #aboutUs {
         background-size: contain;
     }
