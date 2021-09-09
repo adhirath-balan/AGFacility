@@ -218,7 +218,7 @@ a:hover {
 }
 
 .sewage-img {
-    background-image: url("../img/Sewage-treatment.jpg");
+    background-image: url("../img-one/sewage-treatment1.jpg");
     width: 100vw;
     height: 100vh;
     bottom: 0px;
@@ -242,6 +242,7 @@ a:hover {
     height: 100vh;
 }
 
+
 /* Video  */
 
 .video-sec{
@@ -262,7 +263,7 @@ a:hover {
 
 .intro-vid{
     position: absolute;
-    height: 118vh;
+    height: 55.5vw;
     width: 100%;
     z-index: -1;
 }
@@ -507,7 +508,29 @@ video {
 
 .right-img {
     position: absolute;
-    right: -240px;
+    right: -240px!important;
+}
+
+/* .paint-one{
+    overflow: hidden;
+    height: 85vh;
+    max-width: 40vw;
+    left: 1%;
+    border-radius: 10px;
+} */
+
+.paint-one{
+    position: absolute!important;
+    left: 0!important;
+    border-radius: 10px!important;
+}
+
+.one-ac{
+    left: 0!important;
+}
+
+.one-pest{
+    left: 0!important;
 }
 
 .bg-overlay {
