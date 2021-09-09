@@ -199,8 +199,14 @@ a:hover {
     height: 100vh;
 }
 
+.pest-img{
+    background-image: url("../img/pest-control.jpg");
+    width: 100vw;
+    height: 100vh;
+}
+
 .plumbing-img {
-    background-image: url("../img/plumbing.jpg");
+    background-image: url("../img/Plumbing.jpg");
     width: 100vw;
     height: 100vh;
 }
@@ -212,9 +218,10 @@ a:hover {
 }
 
 .sewage-img {
-    background-image: url("../img/sewage.jpg");
+    background-image: url("../img/Sewage-treatment.jpg");
     width: 100vw;
     height: 100vh;
+    bottom: 0px;
 }
 
 .security-img {
