@@ -550,6 +550,11 @@ video {
     left: 0!important;
 }
 
+.one-tank{
+    left: 0!important;
+    bottom: 0;
+}
+
 .bg-overlay {
     background-color: rgba(255, 255, 255, 0.671);
 }
@@ -563,6 +568,10 @@ video {
 
     .second_page {
         margin: 0 5vw;
+    }
+
+    #aboutUs{
+        background-size: contain;
     }
 
     .about-us {
@@ -607,6 +616,10 @@ video {
     .otherservicesHeading {
         margin: 2%;
         font-size: 18px;
+    }
+
+    .otherservicesHeading:hover{
+        font-size: 5.5vw;
     }
 
     .learnMore {
