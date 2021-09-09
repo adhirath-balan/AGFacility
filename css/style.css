@@ -26,6 +26,23 @@ body {
     top: 7rem;
 }
 
+.side-pattern{
+    height: -webkit-fill-available;
+    height: -moz-available;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    position: absolute;
+    top: 0;
+    overflow-x: hidden;
+    z-index: -1;
+}
+
+.side-pattern-img {
+    position: absolute;
+    right: 0;
+    height: 100vh;
+}
+
 .fp_divtwo {
     margin-top: 10rem;
 }
