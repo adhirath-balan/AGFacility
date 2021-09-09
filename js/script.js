@@ -1,3 +1,5 @@
+var size = window.matchMedia("(max-width: 500px)")
+
 // Navbar autohide
 $(document).ready(function () {
 
@@ -38,12 +40,27 @@ $(document).ready(function () {
 })
 
 //Transition
-$(document).ready(function () {
-    $(window).scroll(function () {
-        $('.first_page').css("opacity", 1 - $(window).scrollTop() / 100)
-        $('.second_page').css("opacity", $(window).scrollTop() / 300)
+
+if(!size.matches){
+
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            $('.first_page').css("opacity", 1 - $(window).scrollTop() / 100)
+            $('.second_page').css("opacity", $(window).scrollTop() / 300)
+            $('.side-pattern-img').css("right", ( $(window).scrollTop() * -1/7) + "%")
+        })
     })
-})
+
+}else{
+
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            $('.first_page').css("opacity", 2.5 - $(window).scrollTop() / 100)
+            $('.second_page').css("opacity", -0.5 + ($(window).scrollTop() / 300) )
+            $('.side-pattern-img').css("right", ( $(window).scrollTop() * -1/20) + "%")
+        })
+    })
+}
 
 //Contact Us
 function contactFunction() {
@@ -120,21 +137,6 @@ function commercialIn() {
         document.getElementsByClassName("hover_right")[0].style.zIndex = "0"
         document.getElementsByClassName("feature-content")[0].classList.add("text-justify");
         document.getElementsByClassName("feature-content")[0].style.lineHeight = "2";
-        // document.getElementsByClassName("res-hover")[0].style.opacity = 0;
-        // var interval = setInterval(opacityIncrease(),10);
-        
-        // function opacityIncrease() {
-        //     if(i >= 100){
-        //         clearInterval(interval);
-        //     }else{
-        //         i++;
-        //     console.log(i);
-        //     document.getElementsByClassName("res-hover")[0].style.opacity = ( (i) / 100);
-        //     console.log(document.getElementsByClassName("res-hover")[0].style.opacity);
-        //     }
-            
-        // }
-        
     } else {
         document.getElementsByClassName("hover_center")[0].classList.add("d-none")
         document.getElementsByClassName("hover_right")[0].classList.add("d-none")
