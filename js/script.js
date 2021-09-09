@@ -77,9 +77,9 @@ function contactFunction() {
         } else {
             let x = pos;
             if (size.matches) {
-                x = 3 * pos / 5 + .4;
-                if (x / 4 > 3) x += .1;
-                else if (x / 4 > 6) x += .2;
+                x = 3*pos/5 +.8;
+                if(x/4>=6) x+=.8;
+                else if(x/4>=3) x+=.4;
             }
             document.getElementsByClassName("contact-us-hidden-one")[0].style.bottom = x / 12 + 'em';
             document.getElementsByClassName("contact-us-hidden-two")[0].style.bottom = 2 * x / 12 + 'em';
@@ -102,9 +102,9 @@ function hideFunction() {
         } else {
             let x = pos
             if (size.matches) {
-                x = 3 * pos / 5 + .2;
-                if (x / 2 > 3) x += .1;
-                else if (x / 2 > 6) x += .2;
+                x = 3*pos/5 +.4;
+                if(x/2>=6) x+=.4;
+                else if(x/2>=3) x+=.2;
             }
             document.getElementsByClassName("contact-us-hidden-one")[0].style.bottom = x / 6 + 'em';
             document.getElementsByClassName("contact-us-hidden-two")[0].style.bottom = 2 * x / 6 + 'em';
