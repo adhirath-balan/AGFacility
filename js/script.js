@@ -543,7 +543,7 @@ function openGallery() {
     document.getElementsByClassName("gal-section")[0].classList.remove("d-none");
     //if (gallery === undefined) getGallery();
     if (carouselDiv === undefined && thumbnailDiv === undefined) {
-        noOfImgs = 24;
+        noOfImgs = 23;
         preload(noOfImgs);
         carouselDiv = document.createElement('div');
         carouselDiv.className = "carousel-inner";
