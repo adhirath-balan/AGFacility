@@ -80,6 +80,7 @@ function contactFunction() {
                 x = 3*pos/5 +.8;
                 if(x/4>=6) x+=.8;
                 else if(x/4>=3) x+=.4;
+                document.getElementsByClassName("contact-us")[0].getElementsByTagName("img")[0].setAttribute('onclick','hideFunction()')
             }
             document.getElementsByClassName("contact-us-hidden-one")[0].style.bottom = x / 12 + 'em';
             document.getElementsByClassName("contact-us-hidden-two")[0].style.bottom = 2 * x / 12 + 'em';
@@ -87,6 +88,7 @@ function contactFunction() {
         }
     }
 }
+
 
 function hideFunction() {
     let id = null;
@@ -105,6 +107,7 @@ function hideFunction() {
                 x = 3*pos/5 +.4;
                 if(x/2>=6) x+=.4;
                 else if(x/2>=3) x+=.2;
+                document.getElementsByClassName("contact-us")[0].getElementsByTagName("img")[0].setAttribute('onclick','contactFunction()');
             }
             document.getElementsByClassName("contact-us-hidden-one")[0].style.bottom = x / 6 + 'em';
             document.getElementsByClassName("contact-us-hidden-two")[0].style.bottom = 2 * x / 6 + 'em';
