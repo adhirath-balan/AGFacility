@@ -122,6 +122,7 @@ body {
 
 .service_one {
     background-image: url("../img/cleaning.jpg");
+    background-position: center;
     margin-top: 10rem;
 }
 
