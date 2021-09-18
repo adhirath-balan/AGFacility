@@ -547,8 +547,9 @@ video {
 }
 
 .one-tank {
-    left: 0 !important;
-    bottom: 0;
+    left:  -16px!important;
+    top: -117px;
+    width: 113%!important;
 }
 
 .bg-overlay {
